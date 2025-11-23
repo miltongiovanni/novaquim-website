@@ -1,39 +1,59 @@
 <?php
-var_dump($_SERVER['REQUEST_URI']);
+$sql = "SELECT id, name, slug FROM category";
+$stmt = $con->prepare($sql);
+$stmt->execute();
+$categoriasMenu = $stmt->fetchAll(PDO::FETCH_UNIQUE | PDO::FETCH_ASSOC);
+foreach ($categoriasMenu as $key => $categoria) {
+    $sql2 = "SELECT title, slug FROM product
+            WHERE category_id=:category_id";
+    $stmt2 = $con->prepare($sql2);
+    $stmt2->execute(array('category_id' => $key));
+    $categoriasMenu[$key]['productos'] = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+}
+$sql3 = "SELECT id, name, slug FROM mercado";
+$stmt3 = $con->prepare($sql3);
+$stmt3->execute();
+$mercadosMenu = $stmt3->fetchAll(PDO::FETCH_UNIQUE | PDO::FETCH_ASSOC);
+foreach ($mercadosMenu as $key => $mercado) {
+    $sql4 = "SELECT title, slug FROM product
+            WHERE mercado_id=:mercado_id";
+    $stmt4 = $con->prepare($sql4);
+    $stmt4->execute(array('mercado_id' => $key));
+    $mercadosMenu[$key]['productos'] = $stmt4->fetchAll(PDO::FETCH_ASSOC);
+}
 ?>
 
 <header class="header-with-topbar">
     <!-- start header top bar -->
-    <div class="header-top-bar header-light top-bar-dark bg-very-light-gray" >
+    <div class="header-top-bar header-dark bg-base-color top-bar-dark" >
         <div class="container-fluid">
-            <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
-                <div class="col-md-2 text-center text-md-start xs-px-0">
-                    <div class="header-icon d-none d-lg-flex">
-                        <div class="header-social-icon icon">
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
-                            <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <div class="d-flex h-45px xs-h-auto align-items-center justify-content-between m-0 xs-pt-5px xs-pb-5px">
+                <div class="text-center text-md-start xs-px-0">
+                    <div class="header-icon d-none d-md-flex">
+                        <div class="header-social-icon icon light icon-with-animation">
+                            <a class="nav-link" href="mailto:comercial01.nova@novaquim.com"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://www.facebook.com/industrias.novaquim.1" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <!--<a href="https://twitter.com/IndustriasNova2" target="_blank"><i class="fa-brands fa-twitter"></i></a>-->
+                            <!--<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>-->
                         </div>
                     </div>
                 </div>
-                <div class="col-md-10 text-end d-none d-md-flex">
-                    <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a href="tel:(310) 602-2403"><i class="feather icon-feather-phone-call"></i>(310) 602-2403</a></div>
-                    <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a href="mailto:contacto@novaclean.com.co"><i class="feather icon-feather-mail"></i>contacto@novaclean.com.co</a></div>
-                    <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block"><i class="feather icon-feather-map-pin"></i>Carrera 33A #35A -12 sur, Bogotá D.C.</div>
+                <div id="slogan" class="d-none d-xl-block">PRODUCTOS PARA EL ASEO A LA MEDIDA DE SUS NECESIDADES</div>
+                <div class="text-end d-none d-md-flex">
+                    <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 "><a href="<?= SISTEMA_URL?>" class="text-white" target="_blank"><i class="feather icon-feather-external-link"></i>Iniciar Sesión</a></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- end header top bar -->
     <!-- start navigation -->
-    <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
+    <nav class="navbar navbar-expand-lg header-dark bg-base-color responsive-sticky">
         <div class="container-fluid">
             <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                <a class="navbar-brand" href="demo-accounting.html">
-                    <img src="/img/logo-novaclean-50.png" data-at2x="img/logo-novaclean-100.png" alt="" class="default-logo">
-                    <img src="/img/logo-novaclean-50.png" data-at2x="img/logo-novaclean-100.png" alt="" class="alt-logo">
-                    <img src="/img/logo-novaclean-50.png" data-at2x="img/logo-novaclean-100.png" alt="" class="mobile-logo">
+                <a class="navbar-brand" href="<?= APP_URL ?>">
+                    <img src="/img/logo.png" data-at2x="img/logo-100.png" alt="" class="default-logo">
+                    <img src="/img/logo-50.png" data-at2x="img/logo-100.png" alt="" class="alt-logo">
+                    <img src="/img/logo-50.png" data-at2x="img/logo-100.png" alt="" class="mobile-logo">
                 </a>
             </div>
             <div class="col-auto menu-order position-static">

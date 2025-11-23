@@ -1,8 +1,24 @@
-﻿<!doctype html>
+﻿<?php
+include_once('inc/config_db.php');
+$sql = "SELECT id, title, subtitle, background_image, front_image FROM banner";
+$stmt = $con->prepare($sql);
+$stmt->execute();
+$banners = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$sqlMercados = "SELECT m.id, m.name, m.slug, count(p.id) productsNumber
+        FROM mercado m
+        LEFT JOIN product p on m.id = p.mercado_id
+        GROUP BY m.id";
+
+$stmt = $con->prepare($sqlMercados);
+$stmt->execute();
+$mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+<!doctype html>
 <html class="no-js" lang="es">
 
 <head>
-    <title>Inicio - Novaclean Services S.A.S.</title>
+    <title>Inicio - Industrias Novaquim S.A.S.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="author" content="Novaclean Services">

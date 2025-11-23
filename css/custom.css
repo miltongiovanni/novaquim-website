@@ -3,6 +3,8 @@
 ====================================== */
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* font */
 @font-face {
     font-family: 'cerebri-sans-regular';
@@ -43,11 +45,16 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: BankGothic;
+    src: url(../fonts/BankGothic.ttf);
+}
 /* variable */
 :root {
     --alt-font: 'cerebri-sans-regular';
-    --primary-font:  'cerebri-sans-regular';
-    --base-color: #005153;
+    /*--primary-font:  'cerebri-sans-regular';*/
+    --primary-font:  'Work Sans';
+    --base-color: #030353;
     --dark-gray:#1e3238;
     --very-light-gray:#eceff1;
     --yellow: #ecab23;
@@ -81,7 +88,7 @@ b, strong {
     font-size: 17px;
 }
 header .navbar-brand img {
-    max-height:50px;
+    max-height:100px;
 }
 .header-icon .icon > a {
     font-size: 20px;
@@ -135,6 +142,14 @@ header .navbar-brand {
     display: inline-block;
     font-size: 0;
 }
+
+#slogan {
+    font-family: BankGothic, sans-serif;
+    font-size: 24px;
+    margin: auto;
+    color: var(--white);
+}
+
 /* heading */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 25px;
