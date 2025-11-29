@@ -110,7 +110,7 @@ header .navbar-brand img {
 .navbar .navbar-nav .dropdown .dropdown-menu a:hover,
 .navbar .navbar-nav .dropdown .dropdown-menu li.active > a{
     color: var(--white);
-    font-weight: 500;
+    font-weight: 400;
 }
 .navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a {
     font-size: 16px;
@@ -123,7 +123,7 @@ header .navbar-brand img {
     opacity: 0.6;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu {
-    background-color: var(--dark-gray);
+    background-color: var(--base-color);
 }
 .header-light .header-icon .icon>a, .header-light .navbar-nav .nav-link {
     color: var(--dark-gray);

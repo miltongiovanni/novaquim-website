@@ -66,7 +66,55 @@ foreach ($mercadosMenu as $key => $mercado) {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav fw-600">
                         <li class="nav-item"><a href="/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/' ? 'active' : ''?>">Inicio</a></li>
-                        <li class="nav-item"><a href="/nosotros/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/nosotros/' ? 'active' : ''?>">Nosotros</a></li>
+                        <li class="nav-item"><a href="/quienes-somos/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/nosotros/' ? 'active' : ''?>">Quiénes somos</a></li>
+                        <li class="nav-item dropdown submenu">
+                            <a href="javascript:void(0);" class="nav-link">Productos</a>
+                            <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                            <div class="dropdown-menu submenu-content" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="d-lg-flex mega-menu m-auto flex-wrap">
+                                    <?php
+                                    foreach ($categoriasMenu as $categoria):
+                                    ?>
+                                    <ul class="col-md-2 flex-column">
+                                        <li class=""><h6 class="title my-3"><a class="fw-bold" href="<?= APP_URL .'productos/categoria/'. $categoria['slug'] . '/'?>"><?= $categoria['name'] ?></a></h6></li>
+                                        <?php
+                                        foreach ($categoria['productos'] as $productoMenu):
+                                            ?>
+                                            <li class=""><a class="" href="<?= APP_URL .'productos/' . $productoMenu['slug']. '/' ?>"><?= $productoMenu['title'] ?></a></li>
+                                        <?php
+                                        endforeach;
+                                        ?>
+                                    </ul>
+                                    <?php
+                                    endforeach;
+                                    ?>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a href="javascript:void(0);" class="nav-link">Mercados</a>
+                            <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                            <div class="dropdown-menu submenu-content" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="d-lg-flex mega-menu m-auto flex-wrap">
+                                    <?php
+                                    foreach ($mercadosMenu as $mercado):
+                                    ?>
+                                    <ul class="col-md-2 flex-column">
+                                        <li class=""><h6 class="title my-3"><a class="fw-bold" href="<?= APP_URL .'productos/mercado/'. $mercado['slug']. '/' ?>"><?= $mercado['name'] ?></a></h6></li>
+                                        <?php
+                                        foreach ($mercado['productos'] as $productoMenu):
+                                            ?>
+                                            <li class=""><a class="" href="<?= APP_URL .'productos/' . $productoMenu['slug']. '/' ?>"><?= $productoMenu['title'] ?></a></li>
+                                        <?php
+                                        endforeach;
+                                        ?>
+                                    </ul>
+                                    <?php
+                                    endforeach;
+                                    ?>
+                                </div>
+                            </div>
+                        </li>
                         <li class="nav-item"><a href="/servicios/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/servicios/' ? 'active' : ''?>">Servicios</a></li>
                         <li class="nav-item"><a href="/empleo/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/empleo/' ? 'active' : ''?>">Trabaja con nosotros</a></li>
                         <li class="nav-item"><a href="/testimonios/" class="nav-link  <?=$_SERVER['REQUEST_URI'] == '/testimonios/' ? 'active' : ''?>">Testimonios</a></li>

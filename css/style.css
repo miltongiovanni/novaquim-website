@@ -8866,7 +8866,7 @@ header.sticky .navbar.disable-fixed {
 }
 .navbar .navbar-nav .dropdown .dropdown-menu {
   margin: 0;
-  padding: 60px 0 65px;
+  padding: 10px 0 40px;
   border: 0;
   top: 100%;
   background-color: var(--white);
@@ -8942,7 +8942,7 @@ header.sticky .navbar.disable-fixed {
   display: none;
 }
 .navbar .navbar-nav .submenu-content .mega-menu {
-  width: 1190px;
+  width: 90%;
 }
 .navbar .navbar-nav .simple-dropdown .dropdown-menu {
   display: none;
