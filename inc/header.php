@@ -116,8 +116,8 @@ foreach ($mercadosMenu as $key => $mercado) {
                             </div>
                         </li>
                         <li class="nav-item"><a href="/servicios/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/servicios/' ? 'active' : ''?>">Servicios</a></li>
-                        <li class="nav-item"><a href="/empleo/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/empleo/' ? 'active' : ''?>">Trabaja con nosotros</a></li>
-                        <li class="nav-item"><a href="/testimonios/" class="nav-link  <?=$_SERVER['REQUEST_URI'] == '/testimonios/' ? 'active' : ''?>">Testimonios</a></li>
+                        <li class="nav-item"><a href="/distribuidores/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/distribuidores/' ? 'active' : ''?>">Distribuidores</a></li>
+                        <li class="nav-item"><a href="/formas-de-pago/" class="nav-link  <?=$_SERVER['REQUEST_URI'] == '/formas-de-pago/' ? 'active' : ''?>">Formas de pago</a></li>
                         <li class="nav-item"><a href="/contacto/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/contacto/' ? 'active' : ''?>">Contacto</a></li>
                     </ul>
                 </div>
