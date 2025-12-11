@@ -415,6 +415,7 @@ footer ul li {
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
         margin-bottom: 20px;
     }
+    .hide-on-mobile { display: none !important; }
 }
 @media (max-width: 575px) {
     .accordion-style-06 .accordion-item {

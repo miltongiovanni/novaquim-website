@@ -85,7 +85,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="author" content="Novaclean Services">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
+    <link rel="icon" href="/img/favicon.ico" type="image/ico" sizes="16x16">
     <meta name="description" content="Servicios de aseo">
 
     <?php include('inc/assets.php') ?>
@@ -124,192 +124,203 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                              data-basealign="slide" data-responsive_offset="off" data-responsive="off"
                              data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},
                                      {"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power4.easeInOut"}]' style="background:rgba(22,35,63,0.1); z-index: 0;">
-                        </div>
-                        <!-- end overlay layer -->
-                        <!-- start shape layer -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme bg-regal-blue border-radius-50"
-                             id="slide-1-layer-02" data-x="['center','center','center','center']"
-                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                             data-voffset="['0','0','0','0']" data-width="['900','700','700','600']"
-                             data-height="['900','700','700','600']" data-whitespace="nowrap" data-type="shape"
-                             data-responsive_offset="on"
-                             data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:0.5;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]" style="z-index: 0;">
-                        </div>
-                        <!-- end shape layer -->
-                        <!-- start shape layer -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme bg-regal-blue border-radius-50"
-                             id="slide-1-layer-03" data-x="['center','center','center','center']"
-                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                             data-voffset="['0','0','0','0']" data-width="['1200','1000','900','800']"
-                             data-height="['1200','1000','900','800']" data-whitespace="nowrap" data-type="shape"
-                             data-responsive_offset="on"
-                             data-frames='[{"delay":1300,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:0.3;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]" style="z-index: 0;">
-                        </div>
-                        <!-- end shape layer -->
-                        <!-- start row zone layer -->
-                        <div id="rrzm_638" class="rev_row_zone rev_row_zone_middle">
-                            <!-- start row layer -->
-                            <div class="tp-caption  " id="slide-1-layer-04" data-x="['left','left','left','left']"
-                                 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                                 data-voffset="['-426','-426','-426','-426']" data-width="none" data-height="none"
-                                 data-whitespace="nowrap" data-type="row" data-columnbreak="3"
-                                 data-responsive_offset="on" data-responsive="off"
-                                 data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                 data-paddingtop="[0,0,0,0]" data-paddingright="[100,75,50,30]"
-                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[100,75,50,30]">
-                                <!-- start column layer -->
-                                <div class="tp-caption" id="slide-1-layer-05" data-x="['left','left','left','left']"
-                                     data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
-                                     data-voffset="['100','100','100','100']" data-width="none" data-height="none"
-                                     data-whitespace="nowrap" data-type="column" data-responsive_offset="on"
-                                     data-responsive="off"
-                                     data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-columnwidth="100%" data-verticalalign="top"
-                                     data-textAlign="['center','center','center','center']">
-                                    <!-- start subtitle layer -->
-                                    <div class="tp-caption mx-auto text-uppercase" id="slide-1-layer-06"
-                                         data-x="['center','center','center','center']"
-                                         data-hoffset="['0','0','0','0']"
-                                         data-y="['middle','middle','middle','middle']"
-                                         data-voffset="['0','0','0','0']" data-fontsize="['13','13','13','13']"
-                                         data-lineheight="['20','20','20','20']"
-                                         data-fontweight="['500','500','500','500']"
-                                         data-letterspacing="['1','1','1','1']"
-                                         data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                         data-width="['800','auto','auto','auto']" data-height="auto"
-                                         data-whitespace="normal" data-basealign="grid" data-type="text"
-                                         data-responsive_offset="off" data-verticalalign="middle"
-                                         data-responsive="off"
-                                         data-frames='[{"delay":2500,"speed":800,"frame":"0","from":"y:-50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
-                                         data-textAlign="['center','center','center','center']"
-                                         data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                         data-paddingbottom="[25,25,10,10]" data-paddingleft="[0,0,0,0]"
-                                         style="word-break: initial;">
-                                        <?= $banner['categoria'] ?>
-                                    </div>
-                                    <!-- end subtitle layer -->
-                                    <!-- start title layer -->
-                                    <div class="tp-caption mx-auto" id="slide-1-layer-07"
-                                         data-x="['center','center','center','center']"
-                                         data-hoffset="['0','0','0','0']"
-                                         data-y="['middle','middle','middle','middle']"
-                                         data-voffset="['0','0','0','0']" data-fontsize="['75','60','70','50']"
-                                         data-lineheight="['70','65','75','55']"
-                                         data-fontweight="['700','700','700','700']"
-                                         data-letterspacing="['-2','-2','-2','0']"
-                                         data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                         data-width="['700','600','600','auto']" data-height="auto"
-                                         data-whitespace="normal" data-basealign="grid" data-type="text"
-                                         data-responsive_offset="off" data-verticalalign="middle"
-                                         data-responsive="on"
-                                         data-frames='[{"delay":"1500","split":"chars","splitdelay":0.03,"speed":800,"split_direction":"middletoedge","frame":"0","from":"x:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":100,"frame":"999","to":"opacity:0;fb:0;","ease":"Power4.easeOut"}]'
-                                         data-textAlign="['center','center','center','center']"
-                                         data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                         data-paddingbottom="[33,28,35,25]" data-paddingleft="[0,0,0,0]"
-                                         style="word-break: initial; text-shadow: #0b1236 3px 3px 15px;">
-                                        <?= $banner['title'] ?>
-                                    </div>
-                                    <!-- end title layer -->
-                                    <!-- start text layer -->
-                                    <div class="tp-caption mx-auto" id="slide-1-layer-08"
-                                         data-x="['center','center','center','center']"
-                                         data-hoffset="['0','0','0','0']"
-                                         data-y="['middle','middle','middle','middle']"
-                                         data-voffset="['0','0','0','0']" data-fontsize="['20','20','24','20']"
-                                         data-lineheight="['36','36','40','30']"
-                                         data-fontweight="['300','300','300','300']"
-                                         data-letterspacing="['0','0','0','0']"
-                                         data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                                         data-width="['500','500','auto','auto']" data-height="auto"
-                                         data-whitespace="normal" data-basealign="grid" data-type="text"
-                                         data-responsive_offset="off" data-verticalalign="middle"
-                                         data-responsive="on"
-                                         data-frames='[{"delay":2500,"speed":800,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:0.6;fb:0;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
-                                         data-textAlign="['center','center','center','center']"
-                                         data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                         data-paddingbottom="[36,36,60,40]" data-paddingleft="[0,0,0,0]">
-                                        <?= $banner['subtitle'] ?>.
-                                    </div>
-                                    <!-- end text layer -->
-                                    <!-- start button layer -->
-                                    <div class="tp-caption tp-resizeme" id="slide-1-layer-09"
-                                         data-x="['center','center','center','center']"
-                                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
-                                         data-voffset="['0','0','0','0']" data-width="auto" data-height="none"
-                                         data-whitespace="nowrap" data-fontsize="['18','16','16','16']"
-                                         data-lineheight="['70','55','55','55']" data-type="text"
-                                         data-responsive_offset="off" data-responsive="off"
-                                         data-frames='[{"delay":3000,"speed":1000,"frame":"0","from":"y:100px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                         data-textAlign="['inherit','inherit','inherit','inherit']"
-                                         data-paddingtop="[0,0,0,0]" data-paddingright="[75,70,65,60]"
-                                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[45,35,30,30]">
-                                        <a href="<?= $banner['ruta'] ?>"
-                                           class="btn btn-extra-large get-started-btn btn-rounded with-rounded btn-gradient-flamingo-amethyst-green btn-box-shadow">Ver más<span
-                                                    class="bg-white text-base-color"><i
-                                                        class="fa-solid fa-arrow-right"></i></span></a>
-                                    </div>
-                                    <!-- end button layer -->
                                 </div>
-                                <!-- end column layer -->
-                            </div>
-                            <!-- end row layer -->
-                        </div>
-                        <!-- end row zone layer -->
-                        <!-- start beige background layer -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme bg-base-color border-radius-50"
-                             id="slide-1-layer-10" data-x="['center','center','center','center']"
-                             data-hoffset="['510','410','310','0']" data-y="['middle','middle','middle','middle']"
-                             data-voffset="['-320','-250','-250','0']" data-width="['122','122','120','120']"
-                             data-height="['122','122','120','120']" data-visibility="['on','on','off','off']"
-                             data-whitespace="nowrap" data-basealign="grid" data-type="shape"
-                             data-responsive_offset="on"
-                             data-frames='[{"delay":3500,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]" style="z-index: 0;">
-                        </div>
-                        <!-- end beige background layer -->
-                        <!-- start beige text layer -->
-                        <div class="tp-caption d-inline-block" id="slide-1-layer-11"
-                             data-x="['center','center','center','center']" data-hoffset="['510','410','310','0']"
-                             data-y="['middle','middle','middle','middle']" data-voffset="['-305','-250','-250','0']"
-                             data-visibility="['on','on','off','off']" data-fontsize="['13','13','13','13']"
-                             data-lineheight="['16','16','16','16']" data-fontweight="['500','600','600','600']"
-                             data-letterspacing="['0','0','0','0']"
-                             data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
-                             data-width="['100','100','100','100']" data-height="auto" data-whitespace="normal"
-                             data-basealign="grid" data-type="text" data-responsive_offset="on"
-                             data-verticalalign="middle" data-responsive="on"
-                             data-frames='[{"delay":3700,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]" data-paddingbottom="[33,0,0,0]"
-                             data-paddingleft="[0,0,0,0]" style="word-break: initial;">
-                            <i class="bi bi-patch-check-fill icon-extra-medium d-block pb-10px"></i> <span
-                                    class="d-block text-uppercase">Calidad garantizada</span>
-                        </div>
-                        <!-- end beige text layer -->
-                        <!-- BEGIN IMAGE LAYER -->
-                        <div class="tp-caption tp-resizeme"
+                                <!-- end overlay layer -->
+                                <!-- start shape layer -->
+                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme bg-regal-blue border-radius-50"
+                                     id="slide-1-layer-02" data-x="['center','center','center','center']"
+                                     data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['0','0','0','0']" data-width="['700','700','700','600']"
+                                     data-height="['700','700','700','600']" data-whitespace="nowrap" data-type="shape"
+                                     data-responsive_offset="on"
+                                     data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:0.5;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]" style="z-index: 0;">
+                                </div>
+                                <!-- end shape layer -->
+                                <!-- start shape layer -->
+                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme bg-regal-blue border-radius-50"
+                                     id="slide-1-layer-03" data-x="['center','center','center','center']"
+                                     data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['0','0','0','0']" data-width="['1000','1000','900','800']"
+                                     data-height="['1000','1000','900','800']" data-whitespace="nowrap" data-type="shape"
+                                     data-responsive_offset="on"
+                                     data-frames='[{"delay":1300,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:0.3;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]" style="z-index: 0;">
+                                </div>
+                                <!-- end shape layer -->
+                                <!-- start row zone layer -->
+                                <div id="rrzm_638" class="rev_row_zone rev_row_zone_middle">
+                                    <!-- start row layer -->
+                                    <div class="tp-caption  " id="slide-1-layer-04" data-x="['left','left','left','left']"
+                                         data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                                         data-voffset="['-426','-426','-426','-426']" data-width="none" data-height="none"
+                                         data-whitespace="nowrap" data-type="row" data-columnbreak="3"
+                                         data-responsive_offset="on" data-responsive="off"
+                                         data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                                         data-paddingtop="[0,0,0,0]" data-paddingright="[100,75,50,30]"
+                                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[100,75,50,30]">
+                                        <!-- start column layer -->
+                                        <div class="tp-caption" id="slide-1-layer-05" data-x="['left','left','left','left']"
+                                             data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
+                                             data-voffset="['100','100','100','100']" data-width="none" data-height="none"
+                                             data-whitespace="nowrap" data-type="column" data-responsive_offset="on"
+                                             data-responsive="off"
+                                             data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                             data-columnwidth="100%" data-verticalalign="top"
+                                             data-textAlign="['center','center','center','center']">
+                                            <!-- start subtitle layer -->
+                                            <div class="tp-caption mx-auto text-uppercase" id="slide-1-layer-06"
+                                                 data-x="['center','center','center','center']"
+                                                 data-hoffset="['0','0','0','0']"
+                                                 data-y="['middle','middle','middle','middle']"
+                                                 data-voffset="['0','0','0','0']" data-fontsize="['13','13','13','13']"
+                                                 data-lineheight="['20','20','20','20']"
+                                                 data-fontweight="['500','500','500','500']"
+                                                 data-letterspacing="['1','1','1','1']"
+                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
+                                                 data-width="['800','auto','auto','auto']" data-height="auto"
+                                                 data-whitespace="normal" data-basealign="grid" data-type="text"
+                                                 data-responsive_offset="off" data-verticalalign="middle"
+                                                 data-responsive="off"
+                                                 data-frames='[{"delay":2500,"speed":800,"frame":"0","from":"y:-50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
+                                                 data-textAlign="['center','center','center','center']"
+                                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                 data-paddingbottom="[25,25,10,10]" data-paddingleft="[0,0,0,0]"
+                                                 style="word-break: initial;">
+                                                <?= $banner['categoria'] ?>
+                                            </div>
+                                            <!-- end subtitle layer -->
+                                            <!-- start title layer -->
+                                            <div class="tp-caption mx-auto" id="slide-1-layer-07"
+                                                 data-x="['center','center','center','center']"
+                                                 data-hoffset="['0','0','0','0']"
+                                                 data-y="['middle','middle','middle','middle']"
+                                                 data-voffset="['0','0','0','0']" data-fontsize="['75','60','70','50']"
+                                                 data-lineheight="['70','65','75','55']"
+                                                 data-fontweight="['700','700','700','700']"
+                                                 data-letterspacing="['-2','-2','-2','0']"
+                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
+                                                 data-width="['700','600','600','auto']" data-height="auto"
+                                                 data-whitespace="normal" data-basealign="grid" data-type="text"
+                                                 data-responsive_offset="off" data-verticalalign="middle"
+                                                 data-responsive="on"
+                                                 data-frames='[{"delay":"1500","split":"chars","splitdelay":0.03,"speed":800,"split_direction":"middletoedge","frame":"0","from":"x:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":100,"frame":"999","to":"opacity:0;fb:0;","ease":"Power4.easeOut"}]'
+                                                 data-textAlign="['center','center','center','center']"
+                                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                 data-paddingbottom="[33,28,35,25]" data-paddingleft="[0,0,0,0]"
+                                                 style="word-break: initial; text-shadow: #0b1236 3px 3px 15px;">
+                                                <?= $banner['title'] ?>
+                                            </div>
+                                            <!-- end title layer -->
+                                            <!-- start text layer -->
+                                            <div class="tp-caption mx-auto" id="slide-1-layer-08"
+                                                 data-x="['center','center','center','center']"
+                                                 data-hoffset="['0','0','0','0']"
+                                                 data-y="['middle','middle','middle','middle']"
+                                                 data-voffset="['0','0','0','0']" data-fontsize="['20','20','24','20']"
+                                                 data-lineheight="['36','36','40','30']"
+                                                 data-fontweight="['300','300','300','300']"
+                                                 data-letterspacing="['0','0','0','0']"
+                                                 data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
+                                                 data-width="['500','500','auto','auto']" data-height="auto"
+                                                 data-whitespace="normal" data-basealign="grid" data-type="text"
+                                                 data-responsive_offset="off" data-verticalalign="middle"
+                                                 data-responsive="on"
+                                                 data-frames='[{"delay":2500,"speed":800,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:0.6;fb:0;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
+                                                 data-textAlign="['center','center','center','center']"
+                                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                 data-paddingbottom="[36,36,60,40]" data-paddingleft="[0,0,0,0]">
+                                                <?= $banner['subtitle'] ?>.
+                                            </div>
+                                            <!-- end text layer -->
+                                            <!-- start button layer -->
+                                            <div class="tp-caption tp-resizeme" id="slide-1-layer-09"
+                                                 data-x="['center','center','center','center']"
+                                                 data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                                 data-voffset="['0','0','0','0']" data-width="auto" data-height="none"
+                                                 data-whitespace="nowrap" data-fontsize="['18','16','16','16']"
+                                                 data-lineheight="['70','55','55','55']" data-type="text"
+                                                 data-responsive_offset="off" data-responsive="off"
+                                                 data-frames='[{"delay":3000,"speed":1000,"frame":"0","from":"y:100px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                 data-paddingtop="[0,0,0,0]" data-paddingright="[75,70,65,60]"
+                                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[45,35,30,30]">
+                                                <a href="<?= $banner['ruta'] ?>"
+                                                   class="btn btn-extra-large get-started-btn btn-rounded with-rounded btn-gradient-flamingo-amethyst-green btn-box-shadow">Ver más<span
+                                                            class="bg-white text-base-color"><i
+                                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <!-- end button layer -->
+                                        </div>
+                                        <!-- end column layer -->
+                                    </div>
+                                    <!-- end row layer -->
+                                </div>
+                                <!-- end row zone layer -->
+                                <!-- start beige background layer -->
+                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme bg-base-color border-radius-50"
+                                     id="slide-1-layer-10" data-x="['center','center','center','center']"
+                                     data-hoffset="['370','410','310','0']" data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['-200','-250','-250','0']" data-width="['122','122','120','120']"
+                                     data-height="['122','122','120','120']" data-visibility="['on','on','off','off']"
+                                     data-whitespace="nowrap" data-basealign="grid" data-type="shape"
+                                     data-responsive_offset="on"
+                                     data-frames='[{"delay":3500,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]" style="z-index: 0;">
+                                </div>
+                                <!-- end beige background layer -->
+                                <!-- start beige text layer -->
+                                <div class="tp-caption d-inline-block" id="slide-1-layer-11"
+                                     data-x="['center','center','center','center']" data-hoffset="['370','410','310','0']"
+                                     data-y="['middle','middle','middle','middle']" data-voffset="['-190','-250','-250','0']"
+                                     data-visibility="['on','on','off','off']" data-fontsize="['13','13','13','13']"
+                                     data-lineheight="['16','16','16','16']" data-fontweight="['500','600','600','600']"
+                                     data-letterspacing="['0','0','0','0']"
+                                     data-color="['#ffffff','#ffffff','#ffffff','#ffffff']"
+                                     data-width="['100','100','100','100']" data-height="auto" data-whitespace="normal"
+                                     data-basealign="grid" data-type="text" data-responsive_offset="on"
+                                     data-verticalalign="middle" data-responsive="on"
+                                     data-frames='[{"delay":3700,"speed":1000,"frame":"0","from":"x:0px;y:50px;rX:0deg;rY:0deg;rZ:0deg;sX:0.5;sY:0.5;opacity:0;","to":"o:1;","ease":"Back.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[33,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]" style="word-break: initial;">
+                                    <i class="bi bi-patch-check-fill icon-extra-medium d-block pb-10px"></i> <span
+                                            class="d-block text-uppercase">Calidad garantizada</span>
+                                </div>
+                                <!-- end beige text layer -->
+                                <!-- BEGIN IMAGE LAYER -->
+                                <div class="tp-caption tp-resizeme hide-on-mobile"
 
-                             data-frames='[{"delay":2000,"speed":500,"frame":"0","from":"x:left;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                                     data-frames='[{"delay":2000,"speed":500,"frame":"0","from":"x:left;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                                     data-visibility="['on', 'off', 'off', 'off']"
+                                     data-type="image"
+                                     data-x="['center', 'center', 'center', 'center']"
+                                     data-y="['center', 'center', 'center', 'center']"
+                                     data-hoffset="['-550','-400','-300','-200']"
+                                     data-voffset="['-80','-250','-250','-200']"
+                                     data-width="['auto', 'auto', 'auto', 'auto']"
+                                     data-height="['auto','auto','auto','auto']"
+                                     data-paddingtop="[0, 0, 0, 0]"
+                                     data-paddingright="[0, 0, 0, 0]"
+                                     data-paddingbottom="[0, 0, 0, 0]"
+                                     data-paddingleft="[0, 0, 0, 0]"
 
-                             data-type="image"
-                             data-x="center"
-                             data-y="center"
-                             data-hoffset="-500"
-                             data-voffset="-200"
-                             data-width="['auto']"
-                             data-height="['auto']"
+                                     data-basealign="slide"
+                                     data-responsive_offset="on"
+                                     data-responsive="on"
+                                     data-scalec="1"
+                                     data-scaleend="1"
+                                     data-scale="1"
 
-                        ><img src="<?= ADMIN_URL ?>uploads/images/<?= $banner['front_image'] ?>" alt="App Store" width="130" height="40"></div>
-                        <!-- END IMAGE LAYER -->
+                                ><img class="img-fluid" src="<?= ADMIN_URL ?>uploads/images/<?= $banner['front_image'] ?>" alt="App Store"></div>
+                                <!-- END IMAGE LAYER -->
 
 
 
@@ -330,89 +341,37 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </section>
     <!-- end slider -->
     <!-- start section -->
-    <section class="p-0 border-bottom border-color-extra-medium-gray">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 justify-content-center"
-                 data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 500, "easing": "easeOutQuad" }'>
-                <!-- start content box item -->
-                <div
-                        class="col pt-35px pb-35px md-pb-0 text-dark-gray border-end border-color-extra-medium-gray sm-border-end-0">
-                    <div
-                            class="d-flex flex-column flex-lg-row align-items-center justify-content-center text-center text-lg-start">
-                        <div class="flex-shrink-0 me-15px md-me-0">
-                            <h2 class="mb-0 fw-800">99<sup class="fs-24">%</sup></h2>
-                        </div>
-                        <div>
-                            <span class="lh-24 fw-600 d-block">Track and analyze <br/>business reports.</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- end content box item -->
-                <!-- start content box item -->
-                <div
-                        class="col pt-35px pb-35px md-pb-0 text-dark-gray border-end border-color-extra-medium-gray sm-border-end-0">
-                    <div
-                            class="d-flex flex-column flex-lg-row align-items-center justify-content-center text-center text-lg-start">
-                        <div class="flex-shrink-0 me-15px md-me-0">
-                            <h2 class="mb-0 fw-800 ls-minus-3px">4.98</h2>
-                        </div>
-                        <div>
-                            <div class="review-star-icon fs-20 d-inline-block text-gradient-orange-sky-blue">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                            <span class="lh-24 fw-600 d-block">Best rated agency</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- end content box item -->
-                <!-- start content box item -->
-                <div class="col pt-35px pb-35px text-dark-gray">
-                    <div
-                            class="d-flex flex-column flex-lg-row align-items-center justify-content-center text-center text-lg-start">
-                        <div class="flex-shrink-0 me-15px md-me-0">
-                            <h2 class="mb-0 fw-800">98<sup class="fs-24">%</sup></h2>
-                        </div>
-                        <div>
-                            <span class="lh-24 fw-600 d-block">Genuine repeated <br/>happy customers.</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- end content box item -->
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-    <!-- start section -->
     <section>
         <div class="container">
             <div class="row justify-content-center align-items-center mb-6 sm-pb-9">
                 <div class="col-lg-6 col-md-9 position-relative md-mb-15 text-center text-lg-start d-flex align-items-center justify-content-center"
                      data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 15, "easing": "easeOutQuad" }'>
                     <div class="position-absolute z-index-9 counter-style-02 text-center">
-                        <span class="fs-160 fw-800 text-dark-gray ls-minus-10px xs-ls-minus-5px position-relative lg-fs-130 xs-fs-75">28<sub
+                        <span class="fs-160 fw-800 text-dark-gray ls-minus-10px xs-ls-minus-5px position-relative lg-fs-130 xs-fs-75">24<sub
                                     class="align-top fs-80 lg-fs-70 text-dark-gray position-relative top-minus-3px">+</sub></span>
-                        <span class="d-block mx-auto fs-20 fw-500 lh-26 w-70 text-center text-dark-gray xs-w-100">Years working experience</span>
+                        <span class="d-block mx-auto fs-20 fw-500 lh-26 w-70 text-center text-dark-gray xs-w-100">Años de experiencia</span>
                     </div>
                     <img src="images/demo-corporate-03.png" alt="">
-                    <img src="https://placehold.co/345x366" class="position-absolute top-50 left-minus-100px lg-left-minus-40px sm-left-minus-30px lg-w-50 sm-w-55"
+                    <img src="/img/logo-300.png" class="position-absolute top-50 left-minus-100px lg-left-minus-40px sm-left-minus-30px lg-w-50 sm-w-55"
                          data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-220px)" alt="">
-                    <img src="images/demo-corporate-02.png" class="position-absolute top-0px xl-top-minus-10px w-170px right-20px md-right-40px xs-w-40" data-bottom-top="transform: translateY(-50px)"
+                    <img src="/img/circle-01.png" class="position-absolute top-0px xl-top-minus-10px w-170px right-20px md-right-40px xs-w-40" data-bottom-top="transform: translateY(-50px)"
                          data-top-bottom="transform: translateY(50px)" alt="">
                 </div>
                 <div class="col-lg-6 ps-6 text-center text-lg-start lg-ps-15px"
                      data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Creative approach</span>
-                    <h3 class="text-dark-gray fw-700 ls-minus-1px">Powerful agency for corporate business.</h3>
-                    <p class="w-80 xl-w-90 lg-w-100 mb-40px sm-mb-25px">We strive to develop real-world web solutions that are ideal for small to large projects with bespoke project requirements. We
-                        create compelling web designs, which are the right-fit for your target groups and also deliver optimized.</p>
-                    <a href="demo-corporate-about.html" class="btn btn-large btn-dark-gray btn-hover-animation-switch btn-box-shadow btn-rounded me-25px xs-me-0">
+                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Productos de alto desempeño</span>
+                    <h3 class="text-dark-gray fw-700 ls-minus-1px">Calidad superior a precios competitivos, siempre.</h3>
+                    <p class="w-80 xl-w-90 lg-w-100 mb-40px sm-mb-25px">Industrias Novaquim S.A.S. es una compañía colombiana con más de 20 años de trayectoria, especializada en el desarrollo y
+                        fabricación de productos de higiene y limpieza diseñados para satisfacer las exigencias de los sectores industrial, institucional y doméstico. Nuestro crecimiento ha sido
+                        impulsado por la innovación, la calidad y el compromiso permanente con nuestros clientes.</p>
+                    <a href="/quienes-somos/" class="btn btn-large btn-dark-gray btn-hover-animation-switch btn-box-shadow btn-rounded me-25px xs-me-0">
                                 <span>
-                                    <span class="btn-text">Read about us</span>
+                                    <span class="btn-text">Nosotros</span>
                                     <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
                                     <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
                                 </span>
                     </a>
-                    <span class="text-dark-gray fw-700 ls-minus-05px d-block d-sm-inline-block sm-mt-15px"><a href="tel:1800222000"><i class="feather icon-feather-phone-call me-10px"></i>1 800 222 000</a></span>
+                    <span class="text-dark-gray fw-700 ls-minus-05px d-block d-sm-inline-block sm-mt-15px"><a href="tel:316 8731806"><i class="feather icon-feather-phone-call me-10px"></i>316 8731806</a></span>
                 </div>
             </div>
 
@@ -445,7 +404,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <i class="bi bi-calendar icon-large text-dark-gray mb-20px d-block"></i>
                     </div>
                     <div class="feature-box-content">
-                        <h2 class="d-inline-block align-middle counter-number fw-700 text-dark-gray mb-0 counter" data-speed="2000" data-to="<?= date('Y') - 2015 ?>"></h2>
+                        <h2 class="d-inline-block align-middle counter-number fw-700 text-dark-gray mb-0 counter" data-speed="2000" data-to="<?= date('Y') - 2001 ?>"></h2>
                         <span class="d-block text-dark-gray fw-500">Años de servicio</span>
                     </div>
                 </div>
@@ -456,7 +415,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <i class="fa-solid fa-users align-middle icon-large text-dark-gray mb-20px d-block"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin">
-                        <h2 class="d-inline-block align-middle counter-number fw-700 text-dark-gray mb-0 counter" data-speed="2000" data-to="450"></h2>
+                        <h2 class="d-inline-block align-middle counter-number fw-700 text-dark-gray mb-0 counter" data-speed="2000" data-to="2000"></h2>
                         <span class="d-block text-dark-gray fw-500">Profesionales en Aseo</span>
                     </div>
                 </div>
@@ -1316,15 +1275,15 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
 <!-- slider revolution extension scripts. ONLY NEEDED FOR LOCAL TESTING -->
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>-->
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>-->
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>-->
 <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>-->
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>-->
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>-->
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>-->
+<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>-->
 
 <!-- Slider's main "init" script -->
 <script>
@@ -1413,7 +1372,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 responsiveLevels: [1240, 1024, 768, 480],
                 visibilityLevels: [1240, 1024, 768, 480],
                 gridwidth: [1240, 1024, 768, 480],
-                gridheight: [930, 850, 900, 850],
+                gridheight: [650, 400, 500, 480],
                 /* Lazy Load options are "all", "smart", "single" and "none" */
                 lazyType: "smart",
                 spinner: "spinner0",
