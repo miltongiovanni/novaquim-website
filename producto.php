@@ -68,7 +68,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <section class="top-space-margin">
         <div class="container">
             <div class="row pb-4">
-                <article class="col-md-9 pb-5">
+                <article class="col-md-8 pb-5">
                     <h3 class="entry-title text-uppercase mt-4 mb-3"><?= $producto['title'] ?></h3>
                     <hr>
                     <div class="container-fluid">
@@ -113,7 +113,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         </div>
                     </div>
                 </article>
-                <aside class="col-md-3 px-0">
+                <aside class="col-md-4">
                     <h5>Categorías</h5>
                     <ul class="nav flex-column categoria-list">
                         <?php
