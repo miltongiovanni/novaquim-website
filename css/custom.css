@@ -458,3 +458,9 @@ footer ul li {
         justify-content: center;
     }
 }
+
+.img-product {
+    height: 200px;
+    width: auto;
+    padding: 20px 0;
+}

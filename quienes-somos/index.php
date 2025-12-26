@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿<?php
+include_once('../inc/config_db.php');
+?>
+<!doctype html>
 <html class="no-js" lang="es">
 
 <head>
@@ -18,7 +21,7 @@
     <?php include('../inc/header.php') ?>
     <!-- end header -->
     <!-- start page title -->
-    <section class="top-space-margin page-title-big-typography border-radius-6px lg-border-radius-0px p-0" data-parallax-background-ratio="0.5"
+<!--    <section class="top-space-margin page-title-big-typography border-radius-6px lg-border-radius-0px p-0" data-parallax-background-ratio="0.5"
              style="background-image: url(/img/img_nosotros.jpg)">
         <div class="opacity-extra-medium bg-blue-whale"></div>
         <div class="container">
@@ -36,10 +39,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- end page title -->
     <!-- start section -->
-    <section id="down-section" class="border-bottom border-color-extra-medium-gray">
+    <section id="down-section" class="top-space-margin border-bottom border-color-extra-medium-gray">
         <div class="container overlap-gap-section">
             <div class="row align-items-end justify-content-center mb-5 md-mb-40px text-center text-md-start">
                 <div class="col-xl-5 col-lg-6 col-md-10 md-mb-20px text-center text-lg-start"
@@ -49,7 +52,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-10 offset-xl-1 text-center text-lg-start last-paragraph-no-margin">
                     <p class="w-90 xl-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        Novaclean Service S.A.S fue fundada en enero del año 2015, con el objeto social de proveer Servicios Integrales de Limpieza, mantenimiento y servicios afines. Es una empresa
+                        Industrias Novaquim S.A.S fue fundada en octubre del año 2001, con el objeto social de proveer Servicios Integrales de Limpieza, mantenimiento y servicios afines. Es una empresa
                         que hace parte del Grupo Empresarial Nova (Grupo GEN).</p>
                 </div>
             </div>
@@ -220,11 +223,12 @@
                             <!-- start text slider item -->
                             <div class="swiper-slide">
                                 <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Misión</span>
-                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">Servicios integrales de limpieza.</h3>
-                                <p class="w-95 xl-w-100">Novaclean Service SAS, es una empresa que ofrece servicios integrales de limpieza, desinfección, mantenimiento técnico locativo, jardinería,
-                                    cafetería, cocina, fumigación y otros servicios afines, a nivel nacional, con un equipo humano altamente calificado, cumpliendo protocolos y procesos
-                                    estandarizados, con el uso de maquinaria y herramientas especializada, para satisfacer los requerimientos de nuestros clientes y agregar valor a todos los grupos de
-                                    interés.</p>
+                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">Productos de aseo de alta calidad.</h3>
+                                <p class="w-95 xl-w-100">Novaclean Service SAS, es una industria colombiana comprometida con el desarrollo,
+                                    fabricación y comercialización de productos de aseo de alta calidad, lo
+                                    que nos permite ofrecer a nuestros clientes, soluciones que satisfacen
+                                    sus expectativas de limpieza, cuidado e higiene en el hogar,
+                                    instituciones e industrias en Bogotá y sus alrededores.</p>
                             </div>
                             <!-- end text slider item -->
                             <!-- start text slider item -->

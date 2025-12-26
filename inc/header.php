@@ -65,8 +65,8 @@ foreach ($mercadosMenu as $key => $mercado) {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav fw-600">
-                        <li class="nav-item"><a href="/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/' ? 'active' : ''?>">Inicio</a></li>
-                        <li class="nav-item"><a href="/quienes-somos/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/nosotros/' ? 'active' : ''?>">Quiénes somos</a></li>
+                        <li class="nav-item"><a href="<?= APP_URL ?>" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/' ? 'active' : ''?>">Inicio</a></li>
+                        <li class="nav-item"><a href="<?= APP_URL ?>quienes-somos/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/quienes-somos/' ? 'active' : ''?>">Quiénes somos</a></li>
                         <li class="nav-item dropdown submenu">
                             <a href="javascript:void(0);" class="nav-link">Productos</a>
                             <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
@@ -115,10 +115,10 @@ foreach ($mercadosMenu as $key => $mercado) {
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item"><a href="/servicios/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/servicios/' ? 'active' : ''?>">Servicios</a></li>
-                        <li class="nav-item"><a href="/distribuidores/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/distribuidores/' ? 'active' : ''?>">Distribuidores</a></li>
-                        <li class="nav-item"><a href="/formas-de-pago/" class="nav-link  <?=$_SERVER['REQUEST_URI'] == '/formas-de-pago/' ? 'active' : ''?>">Formas de pago</a></li>
-                        <li class="nav-item"><a href="/contacto/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/contacto/' ? 'active' : ''?>">Contacto</a></li>
+                        <li class="nav-item"><a href="<?= APP_URL ?>servicios/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/servicios/' ? 'active' : ''?>">Servicios</a></li>
+                        <li class="nav-item"><a href="<?= APP_URL ?>distribuidores/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/distribuidores/' ? 'active' : ''?>">Distribuidores</a></li>
+                        <li class="nav-item"><a href="<?= APP_URL ?>formas-de-pago/" class="nav-link  <?=$_SERVER['REQUEST_URI'] == '/formas-de-pago/' ? 'active' : ''?>">Formas de pago</a></li>
+                        <li class="nav-item"><a href="<?= APP_URL ?>contacto/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/contacto/' ? 'active' : ''?>">Contacto</a></li>
                     </ul>
                 </div>
             </div>
