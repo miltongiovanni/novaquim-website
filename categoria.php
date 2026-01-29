@@ -117,7 +117,7 @@ $categoriaList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             ?>
                             <li class="nav-item my-1">
                                 <a class="nav-link <?= $categoria['slug'] == $slugDescripcion ? 'active' : '' ?>"
-                                   href="<?= APP_URL . 'productos/' . $slugTipo . '/' . $categoria['slug'] ?>"><?= $categoria['name'] ?>
+                                   href="<?= APP_URL . 'productos/' . $slugTipo . '/' . $categoria['slug'] . '/' ?>"><?= $categoria['name'] ?>
                                     (<?= $categoria['productsNumber'] ?>)</a>
                             </li>
                         <?php

@@ -5,10 +5,10 @@ include_once('../inc/config_db.php');
 <html class="no-js" lang="es">
 
 <head>
-    <title>Inicio - Novaclean Services S.A.S.</title>
+    <title>Inicio - Industrias Novaquim S.A.S.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="author" content="Novaclean Services">
+    <meta name="author" content="Industrias Novaquim">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <meta name="description" content="Servicios de aseo">
 
@@ -152,7 +152,7 @@ include_once('../inc/config_db.php');
                         </div>
                     </div>
                     <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">Fundación</span>
-                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Se crea Novaclean Services S.A.S. con un contrato de 3 personas.</p>
+                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Se crea Industrias Novaquim S.A.S. con un contrato de 3 personas.</p>
                 </div>
                 <!-- end process step item -->
                 <!-- start process step item -->

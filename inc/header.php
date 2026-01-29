@@ -21,6 +21,10 @@ foreach ($mercadosMenu as $key => $mercado) {
     $stmt4->execute(array('mercado_id' => $key));
     $mercadosMenu[$key]['productos'] = $stmt4->fetchAll(PDO::FETCH_ASSOC);
 }
+$sql = "SELECT  description, value FROM configuration";
+$stmt = $con->prepare($sql);
+$stmt->execute();
+$configuration = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
 ?>
 
 <header class="header-with-topbar">
@@ -31,10 +35,10 @@ foreach ($mercadosMenu as $key => $mercado) {
                 <div class="text-center text-md-start xs-px-0">
                     <div class="header-icon d-none d-md-flex">
                         <div class="header-social-icon icon light icon-with-animation">
-                            <a class="nav-link" href="mailto:comercial01.nova@novaquim.com"><i class="bi bi-envelope-fill"></i></a>
-                            <a href="https://www.facebook.com/industrias.novaquim.1" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <!--<a href="https://twitter.com/IndustriasNova2" target="_blank"><i class="fa-brands fa-twitter"></i></a>-->
-                            <!--<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>-->
+                            <a class="nav-link" href="mailto:<?= $configuration['facebook_url']?>"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="<?= $configuration['facebook_url']?>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="<?= $configuration['twitter_url']?>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="<?= $configuration['instagram_url']?>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>

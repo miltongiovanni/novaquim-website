@@ -2139,7 +2139,7 @@
      ====================================== */
 
     // Contact form validation on submit
-    $(document).on('click', '.submit', function () {
+/*    $(document).on('click', '.submit', function () {
         var error = false,
                 _this = $(this),
                 formObj = _this.parents('form'),
@@ -2252,7 +2252,7 @@
         } else {
             termsObj.removeClass('is-invalid').addClass('is-valid');
         }
-    });
+    });*/
 
     /* ===================================
      Revolution slider

@@ -83,7 +83,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Industrias Novaquim S.A.S. | Productos de aseo a la medida de sus necesidades</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="author" content="Novaclean Services">
+    <meta name="author" content="Industrias Novaquim">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <link rel="icon" href="/img/favicon.ico" type="image/ico" sizes="16x16">
     <meta name="description" content="Servicios de aseo">
@@ -425,14 +425,14 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="overflow-hidden bg-regal-blue position-relative border-radius-6px lg-border-radius-0px z-index-0">
-        <img src="https://placehold.co/760x792" class="position-absolute top-minus-150px left-minus-30px z-index-minus-1" data-bottom-top="transform: rotate(0deg) translateY(0)"
-             data-top-bottom="transform:rotate(-20deg) translateY(0)" alt=""/>
+    <section class="overflow-hidden bg-base-color position-relative border-radius-6px lg-border-radius-0px z-index-0">
+        <!--<img src="https://placehold.co/760x792" class="position-absolute top-minus-150px left-minus-30px z-index-minus-1" data-bottom-top="transform: rotate(0deg) translateY(0)"
+             data-top-bottom="transform:rotate(-20deg) translateY(0)" alt=""/>-->
         <div class="container">
             <div class="row align-items-center mb-6 sm-mb-9 text-center text-lg-start">
                 <div class="col-lg-5 md-mb-20px">
                     <span class="ps-25px pe-25px mb-10px text-uppercase text-white fs-13 lh-42px fw-600 border-radius-100px bg-gradient-blue-whale-transparent d-inline-block">Creative approach</span>
-                    <h3 class="text-white fw-700 mb-0 ls-minus-1px">Corporate services</h3>
+                    <h3 class="text-white fw-700 mb-0 ls-minus-1px">Mercados</h3>
                 </div>
                 <div class="col-lg-5 last-paragraph-no-margin md-mb-20px">
                     <p class="w-85 md-w-100">We strive to develop real-world web solutions that are ideal for small to large projects with bespoke your custom project requirements.</p>
@@ -448,235 +448,124 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <!-- end slider navigation -->
                 </div>
             </div>
-            <div class="row align-items-center mb-6">
-                <div class="col-12">
-                    <div class="outside-box-right-25 sm-outside-box-right-0">
+            <div class="row">
+                <div class="col-md-12 position-relative">
+                    <div class="outside-box-right-20 sm-outside-box-left-0 sm-outside-box-right-0"
+                         data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                         <div class="swiper magic-cursor slider-one-slide"
-                             data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
-                            <div class="swiper-wrapper">
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-extra-medium bg-gradient-dark-transparent"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Creativity</div>
-                                                <i class="line-icon-Medal-2 text-white icon-extra-large"></i>
+                             data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "disableOnInteraction": false },  "pagination": { "el": ".slider-four-slide-pagination", "clickable": true, "dynamicBullets": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
+                            <div class="swiper-wrapper pt-20px pb-20px">
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide">
+                                        <div class="box-shadow-extra-large hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
+                                            <div class="bg-very-light-gray position-relative box-image text-center">
+                                                <img class="img-product" src="/img/hogar.jpg" alt="hogar y oficina">
                                             </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Business planning</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Innovative solutions</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
+                                            <div class="bg-white">
+                                                <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
+                                                    <a href="<?= APP_URL .'productos/mercado/hogar-y-oficina/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">HOGAR Y OFICINA</a>
+                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                </div>
+                                                <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
+                                                    <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/hogar-y-oficina/' ?>">Ver productos <small>(<?= $mercadosList[0]['productsNumber']?>)</small></a></p>
+                                                    <a href="<?= APP_URL .'productos/mercado/hogar-y-oficina/' ?>"
+                                                       class="d-flex justify-content-center align-items-center w-55px h-55px lh-55 rounded-circle bg-dark-gray position-absolute right-40px top-minus-30px"><i
+                                                                class="bi bi-arrow-right-short text-white icon-very-medium"></i></a>
+                                                </div>
                                             </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9">
-                                            </div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
                                         </div>
                                     </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-very-light bg-slate-blue"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Flexible</div>
-                                                <i class="line-icon-Archery-2 text-white icon-extra-large"></i>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide">
+                                        <div class="box-shadow-extra-large hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
+                                            <div class="bg-very-light-gray position-relative box-image text-center">
+                                                <img class="img-product" src="/img/conjunto.jpg" alt="propiedad horizontal">
                                             </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Market research</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Competitors research</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
+                                            <div class="bg-white">
+                                                <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
+                                                    <a href="<?= APP_URL .'productos/mercado/propiedad-horizontal/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">PROPIEDAD HORIZONTAL</a>
+                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                </div>
+                                                <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
+                                                    <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/propiedad-horizontal/' ?>">Ver productos <small>(<?= $mercadosList[1]['productsNumber']?>)</small></a></p>
+                                                    <a href="<?= APP_URL .'productos/mercado/propiedad-horizontal/' ?>"
+                                                       class="d-flex justify-content-center align-items-center w-55px h-55px lh-55 rounded-circle bg-dark-gray position-absolute right-40px top-minus-30px"><i
+                                                                class="bi bi-arrow-right-short text-white icon-very-medium"></i></a>
+                                                </div>
                                             </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9">
-                                            </div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
                                         </div>
                                     </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-very-light bg-slate-blue"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Discover</div>
-                                                <i class="line-icon-Financial text-white icon-extra-large"></i>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide">
+                                        <div class="box-shadow-extra-large hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
+                                            <div class="bg-very-light-gray position-relative box-image text-center">
+                                                <img class="img-product" src="/img/distribucionweb.jpg" alt="Institucional">
                                             </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Business consulting</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Targeted growth</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
+                                            <div class="bg-white">
+                                                <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
+                                                    <a href="<?= APP_URL .'productos/mercado/institucional/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">INSTITUCIONAL</a>
+                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                </div>
+                                                <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
+                                                    <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/institucional/' ?>">Ver productos <small>(<?= $mercadosList[2]['productsNumber']?>)</small></a></p>
+                                                    <a href="<?= APP_URL .'productos/mercado/institucional/' ?>"
+                                                       class="d-flex justify-content-center align-items-center w-55px h-55px lh-55 rounded-circle bg-dark-gray position-absolute right-40px top-minus-30px"><i
+                                                                class="bi bi-arrow-right-short text-white icon-very-medium"></i></a>
+                                                </div>
                                             </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9"></div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
                                         </div>
                                     </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-very-light bg-slate-blue"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Modern</div>
-                                                <i class="line-icon-Money-Bag text-white icon-extra-large"></i>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide">
+                                        <div class="box-shadow-extra-large hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
+                                            <div class="bg-very-light-gray position-relative box-image text-center">
+                                                <img class="img-product" src="/img/carro.jpg" alt="Automotriz">
                                             </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Audience analysis</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Competitors research</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
+                                            <div class="bg-white">
+                                                <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
+                                                    <a href="<?= APP_URL .'productos/mercado/automotriz/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">AUTOMOTRIZ</a>
+                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                </div>
+                                                <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
+                                                    <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/automotriz/' ?>">Ver productos <small>(<?= $mercadosList[3]['productsNumber']?>)</small></a></p>
+                                                    <a href="<?= APP_URL .'productos/mercado/automotriz/' ?>"
+                                                       class="d-flex justify-content-center align-items-center w-55px h-55px lh-55 rounded-circle bg-dark-gray position-absolute right-40px top-minus-30px"><i
+                                                                class="bi bi-arrow-right-short text-white icon-very-medium"></i></a>
+                                                </div>
                                             </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9"></div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
                                         </div>
                                     </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-extra-medium bg-gradient-dark-transparent"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Creativity</div>
-                                                <i class="line-icon-Medal-2 text-white icon-extra-large"></i>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide">
+                                        <div class="box-shadow-extra-large hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
+                                            <div class="bg-very-light-gray position-relative box-image text-center">
+                                                <img class="img-product" src="/img/planta.jpg" alt="Industrial">
                                             </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Business planning</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Innovative solutions</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
+                                            <div class="bg-white">
+                                                <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
+                                                    <a href="<?= APP_URL .'productos/mercado/industrial/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">INDUSTRIAL</a>
+                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                </div>
+                                                <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
+                                                    <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/industrial/' ?>">Ver productos <small>(<?= $mercadosList[4]['productsNumber']?>)</small></a></p>
+                                                    <a href="<?= APP_URL .'productos/mercado/industrial/' ?>"
+                                                       class="d-flex justify-content-center align-items-center w-55px h-55px lh-55 rounded-circle bg-dark-gray position-absolute right-40px top-minus-30px"><i
+                                                                class="bi bi-arrow-right-short text-white icon-very-medium"></i></a>
+                                                </div>
                                             </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9">
-                                            </div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
                                         </div>
                                     </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-very-light bg-slate-blue"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Flexible</div>
-                                                <i class="line-icon-Archery-2 text-white icon-extra-large"></i>
-                                            </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Market research</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Competitors research</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
-                                            </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9">
-                                            </div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
-                                        </div>
-                                    </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-very-light bg-slate-blue"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Discover</div>
-                                                <i class="line-icon-Financial text-white icon-extra-large"></i>
-                                            </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Business consulting</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Targeted growth</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
-                                            </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9"></div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
-                                        </div>
-                                    </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
-                                <!-- start slider item -->
-                                <div class="swiper-slide">
-                                    <!-- start interactive banner item -->
-                                    <div class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
-                                        <img src="https://placehold.co/600x710" alt=""/>
-                                        <div class="opacity-very-light bg-slate-blue"></div>
-                                        <div class="image-content h-100 w-100 ps-15 pe-15 pt-13 pb-13 md-p-10 d-flex justify-content-bottom align-items-start flex-column">
-                                            <div class="hover-label-icon position-relative z-index-9">
-                                                <div class="label bg-base-color fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 ls-05px">Modern</div>
-                                                <i class="line-icon-Money-Bag text-white icon-extra-large"></i>
-                                            </div>
-                                            <div class="mt-auto d-flex align-items-start w-100 z-index-1 position-relative overflow-hidden flex-column">
-                                                <span class="text-white fw-600 fs-20">Audience analysis</span>
-                                                <span class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">Competitors research</span>
-                                                <a href="demo-corporate-services-details.html"
-                                                   class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">Explore services</a>
-                                                <span class="content-arrow lh-42px rounded-circle bg-white w-50px h-50px ms-20px text-center"><i
-                                                            class="fa-solid fa-chevron-right text-dark-gray fs-16"></i></span>
-                                            </div>
-                                            <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9"></div>
-                                            <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="demo-corporate-services-details.html" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
-                                        </div>
-                                    </div>
-                                    <!-- end interactive banner item -->
-                                </div>
-                                <!-- end slider item -->
+                                    <!-- end slider item -->
                             </div>
                         </div>
                     </div>
+                    <!-- start slider pagination -->
+                    <!--<div class="swiper-pagination slider-four-slide-pagination swiper-pagination-style-2 swiper-pagination-clickable swiper-pagination-bullets"></div>-->
+                    <!-- end slider pagination -->
                 </div>
             </div>
             <div class="row">
@@ -690,6 +579,31 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </section>
     <!-- end section -->
+
+    <section class="mb-5">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3><span style="color: #000080;">UBICACIÓN</span></h3>
+                    <p class="mb-0"><strong>Dirección:</strong></p>
+                    <p class="mb-0">Calle 35 C Sur No. 26 F - 40</p>
+                    <p class="mb-0">Bogotá D.C. Colombia</p>
+                    <p class="mb-0"><strong>Teléfonos:</strong></p>
+                    <p class="mb-0">(+57-601) 203 9484 - (+57-601) 202 2912</p>
+                    <p class="mb-0"><strong>Celular:</strong></p>
+                    <p class="mb-0">(+57) 311 252 6120</p>
+                    <p class="mb-0"><strong>Email:</strong></p>
+                    <p class="mb-0"><a href="mailto:info@novaquim.com?target=">info@novaquim.com</a></p>
+                </div>
+                <div class="col-sm-9">
+                    <iframe width="100%" height="450"
+                            src="https://embed.waze.com/es/iframe?zoom=17&lat=4.587338722815989&lon=-74.12103295326234&pin=1&ct=livemap"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- start section -->
     <section>
         <div class="container position-relative">

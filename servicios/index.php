@@ -2,10 +2,10 @@
 <html class="no-js" lang="es">
 
 <head>
-    <title>Inicio - Novaclean Services S.A.S.</title>
+    <title>Inicio - Industrias Novaquim S.A.S.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="author" content="Novaclean Services">
+    <meta name="author" content="Industrias Novaquim">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <meta name="description" content="Servicios de aseo">
 
