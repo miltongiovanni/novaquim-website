@@ -73,7 +73,7 @@ $configuration = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
             </div>
         </div>
     </section>
-    <section class="border-bottom border-color-extra-medium-gray">
+    <section id="down-section" class="border-bottom border-color-extra-medium-gray">
         <div class="container">
 
             <div class="row qr">
@@ -89,8 +89,8 @@ $configuration = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
                     <p><string>Sin costo</string> desde la app de cualquier entidad habilitada</p>
                     <img src="/img/entidades.jpg" alt="app habilitadas" style="border-radius: 10px;">
                 </div>
-                <div class="col-sm-6">
-                    <img src="/img/novaquim-qr.jpg" alt="codigo QR" >
+                <div class="col-sm-6 pt-5">
+                    <img class="mt-5" src="/img/novaquim-qr.jpg" alt="codigo QR" >
                 </div>
             </div>
 

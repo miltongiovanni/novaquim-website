@@ -119,7 +119,6 @@ $configuration = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item"><a href="<?= APP_URL ?>servicios/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/servicios/' ? 'active' : ''?>">Servicios</a></li>
                         <li class="nav-item"><a href="<?= APP_URL ?>distribuidores/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/distribuidores/' ? 'active' : ''?>">Distribuidores</a></li>
                         <li class="nav-item"><a href="<?= APP_URL ?>formas-de-pago/" class="nav-link  <?=$_SERVER['REQUEST_URI'] == '/formas-de-pago/' ? 'active' : ''?>">Formas de pago</a></li>
                         <li class="nav-item"><a href="<?= APP_URL ?>contacto/" class="nav-link <?=$_SERVER['REQUEST_URI'] == '/contacto/' ? 'active' : ''?>">Contacto</a></li>
@@ -127,11 +126,11 @@ $configuration = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
                 </div>
             </div>
             <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
-                <div class="header-icon">
+    <!--            <div class="header-icon">
                     <div class="header-button">
                         <a href="demo-accounting-contact.html" class="btn btn-small btn-rounded btn-base-color btn-box-shadow">Let's discuss</a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </nav>

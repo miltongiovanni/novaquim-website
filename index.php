@@ -75,6 +75,13 @@ $sqlMercados = "SELECT m.id, m.name, m.slug, count(p.id) productsNumber
 $stmt = $con->prepare($sqlMercados);
 $stmt->execute();
 $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$fechaInicio = new DateTime('2001-10-01');
+
+// Fecha actual
+$fechaActual = new DateTime();
+
+// Calculamos la diferencia entre las dos fechas
+$diferencia = $fechaInicio->diff($fechaActual);
 ?>
 <!doctype html>
 <html class="no-js" lang="es">
@@ -347,7 +354,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="col-lg-6 col-md-9 position-relative md-mb-15 text-center text-lg-start d-flex align-items-center justify-content-center"
                      data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 15, "easing": "easeOutQuad" }'>
                     <div class="position-absolute z-index-9 counter-style-02 text-center">
-                        <span class="fs-160 fw-800 text-dark-gray ls-minus-10px xs-ls-minus-5px position-relative lg-fs-130 xs-fs-75">24<sub
+                        <span class="fs-160 fw-800 text-dark-gray ls-minus-10px xs-ls-minus-5px position-relative lg-fs-130 xs-fs-75"><?= $diferencia->y ?><sub
                                     class="align-top fs-80 lg-fs-70 text-dark-gray position-relative top-minus-3px">+</sub></span>
                         <span class="d-block mx-auto fs-20 fw-500 lh-26 w-70 text-center text-dark-gray xs-w-100">Años de experiencia</span>
                     </div>
@@ -361,7 +368,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                      data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Productos de alto desempeño</span>
                     <h3 class="text-dark-gray fw-700 ls-minus-1px">Calidad superior a precios competitivos, siempre.</h3>
-                    <p class="w-80 xl-w-90 lg-w-100 mb-40px sm-mb-25px">Industrias Novaquim S.A.S. es una compañía colombiana con más de 20 años de trayectoria, especializada en el desarrollo y
+                    <p class="w-80 xl-w-90 lg-w-100 mb-40px sm-mb-25px">Industrias Novaquim S.A.S. es una compañía colombiana con más de <?= $diferencia->y ?> años de trayectoria, especializada en el desarrollo y
                         fabricación de productos de higiene y limpieza diseñados para satisfacer las exigencias de los sectores industrial, institucional y doméstico. Nuestro crecimiento ha sido
                         impulsado por la innovación, la calidad y el compromiso permanente con nuestros clientes.</p>
                     <a href="/quienes-somos/" class="btn btn-large btn-dark-gray btn-hover-animation-switch btn-box-shadow btn-rounded me-25px xs-me-0">
@@ -383,7 +390,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                     <div class="feature-box-content">
                         <h2 class="d-inline-block align-middle counter-number fw-700 text-dark-gray mb-0 counter" data-speed="2000" data-to="100"></h2>
-                        <span class="d-block text-dark-gray lh-1 fw-500">Comprometidos con el bienestar de nuestros colaboradores</span>
+                        <span class="d-block text-dark-gray lh-1 fw-500">Comprometidos con el medio ambiente</span>
                     </div>
                 </div>
                 <!-- end counter item -->
@@ -404,7 +411,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <i class="bi bi-calendar icon-large text-dark-gray mb-20px d-block"></i>
                     </div>
                     <div class="feature-box-content">
-                        <h2 class="d-inline-block align-middle counter-number fw-700 text-dark-gray mb-0 counter" data-speed="2000" data-to="<?= date('Y') - 2001 ?>"></h2>
+                        <h2 class="d-inline-block align-middle counter-number fw-700 text-dark-gray mb-0 counter" data-speed="2000" data-to="<?= $diferencia->y ?>"></h2>
                         <span class="d-block text-dark-gray fw-500">Años de servicio</span>
                     </div>
                 </div>
@@ -431,11 +438,11 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="container">
             <div class="row align-items-center mb-6 sm-mb-9 text-center text-lg-start">
                 <div class="col-lg-5 md-mb-20px">
-                    <span class="ps-25px pe-25px mb-10px text-uppercase text-white fs-13 lh-42px fw-600 border-radius-100px bg-gradient-blue-whale-transparent d-inline-block">Creative approach</span>
+                    <span class="ps-25px pe-25px mb-10px text-uppercase text-white fs-13 lh-42px fw-600 border-radius-100px bg-gradient-blue-whale-transparent d-inline-block">Soluciones de higiene y limpieza para cada industria</span>
                     <h3 class="text-white fw-700 mb-0 ls-minus-1px">Mercados</h3>
                 </div>
                 <div class="col-lg-5 last-paragraph-no-margin md-mb-20px">
-                    <p class="w-85 md-w-100">We strive to develop real-world web solutions that are ideal for small to large projects with bespoke your custom project requirements.</p>
+                    <p class="w-85 md-w-100">En Novaquim entendemos que cada sector tiene necesidades diferentes. Por eso desarrollamos soluciones específicas de higiene, limpieza y mantenimiento que se adaptan a los requerimientos de cada cliente.</p>
                 </div>
                 <div class="col-lg-2 d-flex justify-content-center justify-content-lg-end">
                     <!-- start slider navigation -->
@@ -464,7 +471,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="bg-white">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
                                                     <a href="<?= APP_URL .'productos/mercado/hogar-y-oficina/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">HOGAR Y OFICINA</a>
-                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                    <p>El cuidado del hogar y los espacios de trabajo medianos requiere de soluciones prácticas y eficientes.</p>
                                                 </div>
                                                 <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
                                                     <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/hogar-y-oficina/' ?>">Ver productos <small>(<?= $mercadosList[0]['productsNumber']?>)</small></a></p>
@@ -485,7 +492,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="bg-white">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
                                                     <a href="<?= APP_URL .'productos/mercado/propiedad-horizontal/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">PROPIEDAD HORIZONTAL</a>
-                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                    <p>Mantener las zonas comunes impecables, seguras y con una presentación intachable es clave para el bienestar de cualquier propiedad horizontal.</p>
                                                 </div>
                                                 <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
                                                     <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/propiedad-horizontal/' ?>">Ver productos <small>(<?= $mercadosList[1]['productsNumber']?>)</small></a></p>
@@ -506,7 +513,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="bg-white">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
                                                     <a href="<?= APP_URL .'productos/mercado/institucional/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">INSTITUCIONAL</a>
-                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                    <p>Las instituciones de salud, educación y del sector público exigen el máximo nivel de protección y bioseguridad.</p>
                                                 </div>
                                                 <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
                                                     <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/institucional/' ?>">Ver productos <small>(<?= $mercadosList[2]['productsNumber']?>)</small></a></p>
@@ -527,7 +534,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="bg-white">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
                                                     <a href="<?= APP_URL .'productos/mercado/automotriz/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">AUTOMOTRIZ</a>
-                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                    <p>Enfrentar la suciedad pesada, grasas y aceites sin comprometer la estética del vehículo exige soluciones de alta calidad.</p>
                                                 </div>
                                                 <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
                                                     <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/automotriz/' ?>">Ver productos <small>(<?= $mercadosList[3]['productsNumber']?>)</small></a></p>
@@ -548,7 +555,7 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="bg-white">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0" style="height: 190px;">
                                                     <a href="<?= APP_URL .'productos/mercado/industrial/' ?>" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">INDUSTRIAL</a>
-                                                    <!--<p><?php /*= $producto['meta_title']*/?></p>-->
+                                                    <p>Los entornos industriales exigen soluciones robustas para combatir la suciedad pesada y las grasas rebeldes.</p>
                                                 </div>
                                                 <div class="border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px mt-30px sm-ps-35px sm-pe-35px position-relative">
                                                     <p class="mb-3"><a href="<?= APP_URL .'productos/mercado/industrial/' ?>">Ver productos <small>(<?= $mercadosList[4]['productsNumber']?>)</small></a></p>
@@ -604,573 +611,6 @@ $mercadosList = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         </div>
     </section>
-    <!-- start section -->
-    <section>
-        <div class="container position-relative">
-            <div class="row align-items-center mb-7">
-                <div class="col-xxl-4 col-lg-5 md-mb-15 sm-mb-20 text-center text-lg-start">
-                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Simple process</span>
-                    <h3 class="text-dark-gray fw-700 ls-minus-2px mb-40px">Understand the business process.</h3>
-                    <div class="row row-cols-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <!-- start process step item -->
-                        <div class="col-12 process-step-style-05 position-relative hover-box">
-                            <div class="process-step-item d-flex">
-                                <div class="process-step-icon-wrap position-relative">
-                                    <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-60px w-60px fs-14 bg-light-red fw-700 position-relative">
-                                        <span class="number position-relative z-index-1 text-dark-gray">01</span>
-                                        <div class="box-overlay bg-base-color rounded-circle"></div>
-                                    </div>
-                                    <span class="progress-step-separator bg-dark-gray opacity-1"></span>
-                                </div>
-                                <div class="process-content ps-30px last-paragraph-no-margin mb-30px">
-                                    <span class="d-block fw-700 text-dark-gray mb-5px fs-18">Start market research</span>
-                                    <p class="w-90 lg-w-100 lh-32">Lorem ipsum amet consectetur eiusmod tempor incididunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end process step item -->
-                        <!-- start process step item -->
-                        <div class="col-12 process-step-style-05 position-relative hover-box">
-                            <div class="process-step-item d-flex">
-                                <div class="process-step-icon-wrap position-relative">
-                                    <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-60px w-60px fs-14 bg-light-red fw-700 position-relative">
-                                        <span class="number position-relative z-index-1 text-dark-gray">02</span>
-                                        <div class="box-overlay bg-base-color rounded-circle"></div>
-                                    </div>
-                                    <span class="progress-step-separator bg-dark-gray opacity-1"></span>
-                                </div>
-                                <div class="process-content ps-30px last-paragraph-no-margin mb-30px">
-                                    <span class="d-block fw-700 text-dark-gray mb-5px fs-18">Discussion of the idea</span>
-                                    <p class="w-90 lg-w-100 lh-32">Lorem ipsum amet consectetur eiusmod tempor incididunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end process step item -->
-                        <!-- start process step item -->
-                        <div class="col-12 process-step-style-05 position-relative hover-box xs-mb-30px">
-                            <div class="process-step-item d-flex">
-                                <div class="process-step-icon-wrap position-relative">
-                                    <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-60px w-60px fs-14 bg-light-red fw-700 position-relative">
-                                        <span class="number position-relative z-index-1 text-dark-gray">03</span>
-                                        <div class="box-overlay bg-base-color rounded-circle"></div>
-                                    </div>
-                                </div>
-                                <div class="process-content ps-30px last-paragraph-no-margin">
-                                    <span class="d-block fw-700 text-dark-gray mb-5px fs-18">Production planning</span>
-                                    <p class="w-90 lg-w-100 lh-32">Lorem ipsum amet consectetur eiusmod tempor incididunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end process step item -->
-                    </div>
-                </div>
-                <div class="col-lg-7 offset-xxl-1 position-relative md-mb-30px sm-mb-15"
-                     data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <img src="https://placehold.co/675x560" class="position-relative z-index-9 top-40px" alt="">
-                    <img src="images/demo-corporate-03.png" class="absolute-middle-center xs-w-95" alt="">
-                    <img src="https://placehold.co/144x64" class="position-absolute top-50px left-0px xs-left-15px"
-                         data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)"
-                         alt="">
-                    <img src="https://placehold.co/67x34" class="position-absolute top-150px left-30"
-                         data-bottom-top="transform: translateY(30px)" data-top-bottom="transform: translateY(-30px)"
-                         alt="">
-                    <img src="https://placehold.co/61x30" class="position-absolute top-50px right-30"
-                         data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)"
-                         alt="">
-                    <img src="https://placehold.co/93x45"
-                         class="position-absolute top-100px right-0px xs-right-15px"
-                         data-bottom-top="transform: translateY(30px)" data-top-bottom="transform: translateY(-30px)"
-                         alt="">
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 text-center align-items-center" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="bg-base-color fw-700 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px sm-m-5px d-inline-block align-middle">hurray</div>
-                    <div class="fs-18 fw-500 text-dark-gray d-inline-block align-middle">Let's make something great work together. <a href="demo-corporate-contact.html"
-                                                                                                                                      class="text-dark-gray text-decoration-line-bottom fw-700">Got a
-                            project in mind?</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-    <!-- start section -->
-    <section class="bg-gradient-quartz-white border-radius-6px lg-border-radius-0px">
-        <div class="container background-no-repeat background-position-top"
-             style="background-image: url('https://placehold.co/1126x630')">
-            <div class="row justify-content-center mb-3">
-                <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center"
-                     data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <h3 class="text-dark-gray fw-700 ls-minus-1px">Trusted by the world's fastest growing companies</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center mb-6 sm-mb-8"
-                 data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <div class="col-12 position-relative ps-8 pe-8 lg-ps-15px lg-pe-15px">
-                    <div class="swiper magic-cursor testimonials-style-06"
-                         data-slider-options='{ "loop": true, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav", "effect": "fade" } }'>
-                        <div class="swiper-wrapper">
-                            <!-- start testimonial item -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-8 col-md-4 col-sm-6 text-center md-mb-30px">
-                                        <img alt="" src="https://placehold.co/270x245">
-                                    </div>
-                                    <div class="col-lg-5 col-md-7 last-paragraph-no-margin text-center text-md-start">
-                                        <a href="#" class="mb-15px d-block"><img src="images/logo-monday-dark-blue-01.svg" class="h-35px" alt=""></a>
-                                        <span class="mb-5px d-table fs-18 lh-30 fw-500 text-dark-gray">Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Trust us we looked for a very long time.</span>
-                                        <span class="fs-15 text-uppercase fw-800 text-base-color ls-1px">Herman miller, Monday</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end testimonial item -->
-                            <!-- start testimonial item -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-8 col-md-4 col-sm-6 text-center md-mb-30px">
-                                        <img alt="" src="https://placehold.co/270x245">
-                                    </div>
-                                    <div class="col-lg-5 col-md-7 last-paragraph-no-margin text-center text-md-start">
-                                        <a href="#" class="mb-15px d-block"><img src="images/logo-loitech-dark-blue.svg" class="h-35px" alt=""></a>
-                                        <span class="mb-5px d-table fs-18 lh-30 fw-500 text-dark-gray">Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Trust us we looked for a very long time.</span>
-                                        <span class="fs-15 text-uppercase fw-800 text-base-color ls-1px">Leonel mooney, Logitech</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end testimonial item -->
-                            <!-- start testimonial item -->
-                            <div class="swiper-slide">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-8 col-md-4 col-sm-6 text-center md-mb-30px">
-                                        <img alt="" src="https://placehold.co/270x245">
-                                    </div>
-                                    <div class="col-lg-5 col-md-7 last-paragraph-no-margin text-center text-md-start">
-                                        <a href="#" class="mb-15px d-block"><img src="images/logo-invision-dark-blue.svg" class="h-35px" alt=""></a>
-                                        <span class="mb-5px d-table fs-18 lh-30 fw-500 text-dark-gray">Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for all your hard work. Trust us we looked for a very long time.</span>
-                                        <span class="fs-15 text-uppercase fw-800 text-base-color ls-1px">Matthew taylor, invision</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end testimonial item -->
-                        </div>
-                        <!-- start slider navigation -->
-                        <div class="swiper-button-previous-nav swiper-button-prev md-left-0px"><i class="feather icon-feather-arrow-left icon-extra-medium text-dark-gray"></i></div>
-                        <div class="swiper-button-next-nav swiper-button-next md-right-0px"><i class="feather icon-feather-arrow-right icon-extra-medium text-dark-gray"></i></div>
-                        <!-- end slider pagination -->
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-md-3 justify-content-center mb-6 md-mb-8 sm-mb-45px"
-                 data-anime='{ "el": "childs", "willchange": "transform", "perspective": [1200,1200], "translateY": [0, 0], "scale": [1.1, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 1000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <div class="col sm-mb-30px">
-                    <div class="bg-white h-100 border-radius-6px text-center box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                        <div class="pt-10 pb-10">
-                            <img src="images/logo-monday-dark-gray-02.svg" class="h-40px md-h-35px sm-h-40px" alt=""/>
-                        </div>
-                        <div class="border-top fs-16 p-15px last-paragraph-no-margin">
-                            <p>Project management - <span class="fw-600 text-dark-gray">275% Growth</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col sm-mb-30px">
-                    <div class="bg-white h-100 border-radius-6px text-center box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                        <div class="pt-10 pb-10">
-                            <img src="images/logo-dropbox-dark-gray-02.svg" class="h-40px md-h-35px sm-h-40px" alt=""/>
-                        </div>
-                        <div class="border-top fs-16 border-1 border-color-extra-medium-gray p-15px last-paragraph-no-margin">
-                            <p>Team management - <span class="fw-600 text-dark-gray">195% Growth</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="bg-white h-100 border-radius-6px text-center box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                        <div class="pt-10 pb-10">
-                            <img src="images/logo-slack-dark-gray-02.svg" class="h-40px md-h-35px sm-h-40px" alt=""/>
-                        </div>
-                        <div class="border-top fs-16 border-1 border-color-extra-medium-gray p-15px last-paragraph-no-margin">
-                            <p>Secure storage - <span class="fw-600 text-dark-gray">235% Growth</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center ps-3 pe-3 xs-mt-40px"
-                 data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <!-- start client item -->
-                <div class="col client-box text-center md-mb-40px">
-                    <a href="#"><img src="images/logo-walmart-dark-blue.svg" class="h-45px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center md-mb-40px">
-                    <a href="#"><img src="images/logo-netflix-dark-blue.svg" class="h-45px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center md-mb-40px">
-                    <a href="#"><img src="images/logo-invision-dark-blue.svg" class="h-45px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center sm-mb-40px">
-                    <a href="#"><img src="images/logo-yahoo-dark-blue.svg" class="h-45px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center">
-                    <a href="#"><img src="images/logo-amazon-dark-blue.svg" class="h-45px" alt=""></a>
-                </div>
-                <!-- end client item -->
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-    <!-- start section -->
-    <section class="p-0">
-        <div class="container">
-            <div class="row justify-content-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <div class="col-12">
-                    <div class="border-radius-6px h-450px md-h-350px sm-h-400px d-flex flex-wrap align-items-center justify-content-center overflow-hidden cover-background box-shadow-quadruple-large pt-15"
-                         style="background-image: url('https://placehold.co/1315x450')">
-                        <div class="opacity-full-dark bg-gradient-regal-blue-transparent"></div>
-                        <div class="row justify-content-center m-0">
-                            <div class="col-lg-7 col-md-8 z-index-1 text-center text-md-start sm-mb-20px">
-                                <h3 class="text-white mb-0 fw-400 fancy-text-style-4">We make the creative solutions for <span class="fw-600"
-                                                                                                                               data-fancy-text='{ "effect": "rotate", "string": ["business!", "problems!", "brands!"] }'></span>
-                                </h3>
-                            </div>
-                            <div class="col-md-2 position-relative z-index-1 text-center sm-mb-20px">
-                                <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU"
-                                   class="position-relative d-inline-block text-center border border-2 border-color-white rounded-circle video-icon-box video-icon-large popup-youtube">
-                                            <span>
-                                                <span class="video-icon">
-                                                    <i class="fa-solid fa-play fs-20 text-white"></i>
-                                                </span>
-                                            </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="w-100 text-center position-relative mt-auto pt-20px pb-25px ps-15px pe-15px border-top border-color-transparent-white-light">
-                            <div class="fs-14 text-uppercase text-white fw-600 ls-05px">Let's make something great work together. <a href="demo-corporate-contact.html"
-                                                                                                                                     class="text-decoration-line-bottom text-white">Got a project in
-                                    mind?</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-    <!-- start section -->
-    <section>
-        <div class="container">
-            <div class="row justify-content-center mb-3">
-                <div class="col-xl-5 col-lg-6 col-md-7 text-center"
-                     data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Predictable pricing</span>
-                    <h3 class="text-dark-gray fw-700 ls-minus-1px">Tailored pricing plans for everyone</h3>
-                </div>
-            </div>
-            <div class="row align-items-end pricing-table-style-05 g-0 mb-6 background-position-center background-no-repeat justify-content-center"
-                 style="background-image: url('https://placehold.co/804x729')">
-                <div class="col-lg-4 col-md-8 md-mb-30px" data-anime='{ "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <div class="border-radius-6px position-relative overflow-hidden">
-                        <div class="pricing-header pt-45px pb-10px border-radius-6px text-center position-relative top-minus-3px">
-                            <span class="ps-25px pe-25px mb-15px text-uppercase text-base-color fs-13 lh-34 fw-700 border-radius-100px bg-solitude-blue d-inline-block">Starter</span>
-                            <h5 class="fw-700 mb-0 text-dark-gray alt-font">Individual</h5>
-                            <div class="pricing-body pt-35px">
-                                <ul class="p-0 m-0 list-style-02 fw-500">
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Marketing strategy
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Competitive work analysis
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-red h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-x align-self-center text-white fs-14 d-flex"></i></span>Social media share audit
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-red h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-x align-self-center text-white fs-14 d-flex"></i></span>Monthly management
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row align-items-center pt-25px pb-25px">
-                            <div class="col text-center last-paragraph-no-margin d-flex align-items-center justify-content-center">
-                                <h3 class="alt-font text-dark-gray mb-0 me-15px fw-700 ls-minus-2px">$29</h3>
-                                <p class="w-120px fs-15 lh-22 text-start">Per user/month billed annually*</p>
-                            </div>
-                        </div>
-                        <div class="pricing-footer ps-12 pe-12 pb-8 text-center">
-                            <a href="demo-corporate-pricing.html" class="btn btn-large btn-dark-gray btn-box-shadow btn-hover-animation-switch btn-round-edge w-100 text-transform-none mb-15px">
-                                        <span>
-                                            <span class="btn-text">Join this plan </span>
-                                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                        </span>
-                            </a>
-                            <span class="fs-16">Cancel anytime</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-8 md-mb-30px" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <div class="bg-dark-gray border-radius-6px overflow-hidden position-relative box-shadow-double-large z-index-9">
-                        <div class="p-10px fw-700 fs-14 text-white bg-gradient-flamingo-amethyst-green text-uppercase text-center">Popular</div>
-                        <div
-                                class="pricing-header pt-45px pb-10px bg-white border-radius-6px text-center position-relative top-minus-3px">
-                            <span class="ps-25px pe-25px mb-15px text-uppercase text-base-color fs-13 lh-34 fw-700 border-radius-100px bg-solitude-blue d-inline-block">Professional</span>
-                            <h5 class="fw-700 mb-0 text-dark-gray alt-font">Business</h5>
-                            <div class="pricing-body pt-35px">
-                                <ul class="p-0 m-0 list-style-02 fw-500 text-center text-md-start">
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Marketing strategy
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Competitive work analysis
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Social media share audit
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                        <span class="d-flex align-self-center justify-content-center bg-red h-20px w-20px border-radius-100 me-10px"><i
-                                                    class="bi bi-x align-self-center text-white fs-14 d-flex"></i></span>Monthly management
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row align-items-center pt-25px pb-25px">
-                            <div
-                                    class="col text-center last-paragraph-no-margin d-flex align-items-center justify-content-center">
-                                <h3 class="alt-font text-white mb-0 me-15px fw-700 ls-minus-2px">$39</h3>
-                                <p class="w-120px fs-15 lh-22 text-start">Per user/month billed annually*</p>
-                            </div>
-                        </div>
-                        <div class="pricing-footer ps-12 pe-12 pb-8 text-center">
-                            <a href="demo-corporate-pricing.html" class="btn btn-large btn-white btn-box-shadow btn-hover-animation-switch btn-round-edge w-100 text-transform-none mb-15px fw-700">
-                                        <span>
-                                            <span class="btn-text">Join this plan </span>
-                                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                        </span>
-                            </a>
-                            <span class="fs-16 text-white opacity-5 fw-300">Cancel anytime</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-8"
-                     data-anime='{ "translateX": [-50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <div class="border-radius-6px position-relative overflow-hidden">
-                        <div
-                                class="pricing-header pt-45px pb-10px border-radius-6px text-center position-relative top-minus-3px">
-                            <span class="ps-25px pe-25px mb-15px text-uppercase text-base-color fs-13 lh-34 fw-700 border-radius-100px bg-solitude-blue d-inline-block">Enterprise</span>
-                            <h5 class="fw-700 mb-0 text-dark-gray alt-font">Corporate</h5>
-                            <div class="pricing-body pt-35px">
-                                <ul class="p-0 m-0 list-style-02 fw-500 text-center text-md-start">
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                                <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px">
-                                                    <i class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Marketing strategy
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                                <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px">
-                                                    <i class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Competitive work analysis
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                                <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px">
-                                                    <i class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Social media share audit
-                                    </li>
-                                    <li class="pt-15px pb-15px ps-12 pe-12 border-top border-color-extra-medium-gray text-dark-gray lg-ps-10 lg-pe-10">
-                                                <span class="d-flex align-self-center justify-content-center bg-green h-20px w-20px border-radius-100 me-10px">
-                                                    <i class="bi bi-check align-self-center text-white fs-14 d-flex"></i></span>Monthly management
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row align-items-center pt-25px pb-25px">
-                            <div
-                                    class="col text-center last-paragraph-no-margin d-flex align-items-center justify-content-center">
-                                <h3 class="alt-font text-dark-gray mb-0 me-15px fw-700 ls-minus-2px">$59</h3>
-                                <p class="w-120px fs-15 lh-22 text-start">Per user/month billed annually*</p>
-                            </div>
-                        </div>
-                        <div class="pricing-footer ps-12 pe-12 pb-8 text-center">
-                            <a href="demo-corporate-pricing.html"
-                               class="btn btn-large btn-dark-gray btn-box-shadow btn-hover-animation-switch btn-round-edge w-100 text-transform-none mb-15px">
-                                        <span>
-                                            <span class="btn-text">Join this plan </span>
-                                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                        </span>
-                            </a>
-                            <span class="fs-16">Cancel anytime</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 justify-content-center align-items-center">
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-08 sm-mb-25px text-center text-sm-start md-mb-30px">
-                    <div class="d-flex justify-content-center">
-                        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
-                            <div class="feature-box-icon me-10px">
-                                <i class="bi bi-calendar-check fs-20 text-dark-gray"></i>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="fw-600 text-dark-gray">Get 30 day free trial</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-08 sm-mb-25px text-center text-sm-start md-mb-30px">
-                    <div class="d-flex justify-content-center">
-                        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
-                            <div class="feature-box-icon me-10px">
-                                <i class="bi bi-wallet2 fs-20 text-dark-gray"></i>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="fw-600 text-dark-gray">No any hidden fees pay</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col icon-with-text-style-08 text-center text-sm-start">
-                    <div class="d-flex justify-content-center">
-                        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
-                            <div class="feature-box-icon me-10px">
-                                <i class="bi bi-clock fs-20 text-dark-gray"></i>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="fw-600 text-dark-gray">You can cancel anytime</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-    <!-- start section -->
-    <section class="bg-gradient-quartz-white border-radius-6px lg-border-radius-0px pb-0">
-        <div class="container">
-            <div class="row justify-content-center mb-3">
-                <div class="col-lg-7 text-center"
-                     data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <h3 class="text-dark-gray fw-700 ls-minus-1px">Interesting articles</h3>
-                </div>
-            </div>
-            <div class="row mb-5 sm-mb-7">
-                <div class="col-12">
-                    <ul class="blog-grid blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large"
-                        data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <li class="grid-sizer"></li>
-                        <!-- start blog item -->
-                        <li class="grid-item">
-                            <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                <div class="blog-image">
-                                    <a href="demo-corporate-blog-single-clean.html" class="d-block"><img src="https://placehold.co/600x430" alt=""/></a>
-                                    <div class="blog-categories">
-                                        <a href="demo-corporate-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Agency</a>
-                                    </div>
-                                </div>
-                                <div class="card-body p-12 lg-p-10">
-                                    <a href="demo-corporate-blog-single-clean.html" class="card-title mb-15px fw-700 fs-19 text-dark-gray d-inline-block w-90 md-w-100">Build up healthy habits and
-                                        strong peaceful life.</a>
-                                    <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor...</p>
-                                    <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                        <div class="me-auto">
-                                            <span class="blog-date d-inline-block fw-700 text-dark-gray">30 August 2021</span>
-                                            <div class="d-inline-block author-name fw-700 text-dark-gray">By <a href="demo-corporate-blog.html" class="text-dark-gray text-decoration-line-bottom">Den
-                                                    viliamson</a></div>
-                                        </div>
-                                        <div class="like-count">
-                                            <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-700">25</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- end blog item -->
-                        <!-- start blog item -->
-                        <li class="grid-item">
-                            <div
-                                    class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                <div class="blog-image">
-                                    <a href="demo-corporate-blog-single-clean.html" class="d-block"><img
-                                                src="https://placehold.co/600x430" alt=""/></a>
-                                    <div class="blog-categories">
-                                        <a href="demo-corporate-blog.html"
-                                           class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Luxurious</a>
-                                    </div>
-                                </div>
-                                <div class="card-body p-12 lg-p-10">
-                                    <a href="demo-corporate-blog-single-clean.html" class="card-title mb-15px fw-700 fs-19 text-dark-gray d-inline-block w-90 md-w-100">How to bring the season into
-                                        your great marketing.</a>
-                                    <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor...</p>
-                                    <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                        <div class="me-auto">
-                                            <span class="blog-date d-inline-block fw-700 text-dark-gray">28 August 2021</span>
-                                            <div class="d-inline-block author-name fw-700 text-dark-gray">By <a href="demo-corporate-blog.html" class="text-dark-gray text-decoration-line-bottom">Hugh
-                                                    macleod</a></div>
-                                        </div>
-                                        <div class="like-count">
-                                            <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-700">58</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- end blog item -->
-                        <!-- start blog item -->
-                        <li class="grid-item">
-                            <div
-                                    class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
-                                <div class="blog-image">
-                                    <a href="demo-corporate-blog-single-clean.html" class="d-block"><img src="https://placehold.co/600x430" alt=""/></a>
-                                    <div class="blog-categories">
-                                        <a href="demo-corporate-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase fw-700">Business</a>
-                                    </div>
-                                </div>
-                                <div class="card-body p-12 lg-p-10">
-                                    <a href="demo-corporate-blog-single-clean.html" class="card-title mb-15px fw-700 fs-19 text-dark-gray d-inline-block w-90 md-w-100">Be the strong willed one the
-                                        public relationship.</a>
-                                    <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor...</p>
-                                    <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
-                                        <div class="me-auto">
-                                            <span class="blog-date d-inline-block fw-700 text-dark-gray">26 August 2021</span>
-                                            <div class="d-inline-block author-name fw-700 text-dark-gray">By <a href="demo-corporate-blog.html" class="text-dark-gray text-decoration-line-bottom">Walton
-                                                    smith</a></div>
-                                        </div>
-                                        <div class="like-count">
-                                            <a href="#"><i class="fa-regular fa-heart text-red"></i><span class="text-dark-gray align-middle fw-700">75</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- end blog item -->
-                    </ul>
-                </div>
-            </div>
-            <div class="row mb-7 sm-mb-9" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <div class="col text-center">
-                    <div class="fs-26 sm-fs-22 sm-lh-30 fw-600 ls-minus-1px text-dark-gray d-inline-block align-middle me-20px md-m-10px md-mt-0">What do people say about our services?</div>
-                    <a href="https://www.trustpilot.com/" target="_blank"><img src="https://placehold.co/416x44" class="d-inline-block align-middle" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
     <!-- start footer -->
     <?php include('inc/footer.php') ?>
     <!-- end footer -->

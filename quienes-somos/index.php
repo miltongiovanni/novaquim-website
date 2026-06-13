@@ -144,7 +144,7 @@ include_once('../inc/config_db.php');
             <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center g-0" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                 <!-- start process step item -->
                 <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box md-mb-50px">
-                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2015</h4>
+                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2001</h4>
                     <div class="process-step-icon-box position-relative mt-25px mb-25px">
                         <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
                         <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
@@ -152,46 +152,46 @@ include_once('../inc/config_db.php');
                         </div>
                     </div>
                     <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">Fundación</span>
-                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Se crea Industrias Novaquim S.A.S. con un contrato de 3 personas.</p>
+                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Se crea Industrias Novaquim con el propósito de desarrollar soluciones de higiene y limpieza para hogares, industrias e instituciones.</p>
                 </div>
                 <!-- end process step item -->
                 <!-- start process step item -->
                 <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box md-mb-50px">
-                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2019</h4>
+                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2011</h4>
                     <div class="process-step-icon-box position-relative mt-25px mb-25px">
                         <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
                         <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
                             <span class="w-8px h-8px bg-base-color border-radius-100"></span>
                         </div>
                     </div>
-                    <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">100 trabajadores</span>
-                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Superamos la meta de llegar a los 100 trabajadores terminando con 150 colabores.</p>
+                    <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">Certificación INVIMA</span>
+                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Obtención del Certificado de Capacidad de Producción en Higiene Doméstica emitido por INVIMA, fortaleciendo los procesos de calidad y manufactura.</p>
                 </div>
                 <!-- end process step item -->
                 <!-- start process step item -->
                 <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box xs-mb-50px">
-                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2021</h4>
+                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2015</h4>
                     <div class="process-step-icon-box position-relative mt-25px mb-25px">
                         <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
                         <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
                             <span class="w-8px h-8px bg-base-color border-radius-100"></span>
                         </div>
                     </div>
-                    <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">Nueva sede</span>
-                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Crecimos como equipo y como empresa igualmente nos ampliamos a una sede mejor.</p>
+                    <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">Consolidación en el sector institucional</span>
+                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Novaquim logra posicionarse como proveedor para conjuntos residenciales, empresas, oficinas e instituciones educativas.</p>
                 </div>
                 <!-- end process step item -->
                 <!-- start process step item -->
                 <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box">
-                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2024</h4>
+                    <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2020</h4>
                     <div class="process-step-icon-box position-relative mt-25px mb-25px">
                         <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
                         <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
                             <span class="w-8px h-8px bg-base-color border-radius-100"></span>
                         </div>
                     </div>
-                    <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">Certificaciones</span>
-                    <p class="w-75 sm-w-85 d-inline-block lh-sm">En nuestro proceso de mejoramiento continuo, empezamos los procesos de certificación de calidad ISO 9001.</p>
+                    <span class="d-inline-block fw-600 text-dark-gray fs-18 mb-5px">Compromiso con la higiene y desinfección</span>
+                    <p class="w-75 sm-w-85 d-inline-block lh-sm">Durante la emergencia sanitaria, Novaquim fortalece su línea de limpieza y desinfección, apoyando empresas y hogares con soluciones especializadas.</p>
                 </div>
                 <!-- end process step item -->
             </div>
@@ -362,62 +362,128 @@ include_once('../inc/config_db.php');
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 col-lg-6 text-center mb-1" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <span class="text-dark-gray fw-700 fs-15 text-uppercase border-1 pb-5px border-bottom border-color-extra-medium-gray text-dark-gray">Join the 10,000+ companies using crafto</span>
+                    <span class="text-dark-gray fw-700 fs-15 text-uppercase border-1 pb-5px border-bottom border-color-extra-medium-gray text-dark-gray">Algunos de nuestros clientes</span>
                 </div>
             </div>
             <div class="row position-relative clients-style-08 mt-25px"
                  data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 800, "delay":100, "staggervalue": 150, "easing": "easeOutQuad" }'>
                 <div class="col swiper text-center feather-shadow"
-                     data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 3000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false, "pauseOnMouseEnter": false}, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "768": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
-                    <div class="swiper-wrapper marquee-slide">
+                     data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "centeredSlides":true, "speed": 3000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false, "pauseOnMouseEnter": false}, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "768": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
+                    <div class="swiper-wrapper marquee-slide ">
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-walmart-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/abadia_hayuelos.jpg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-netflix-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/altavista.jpeg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-invision-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/antigua_helvetia.jpg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-yahoo-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/arces.jpeg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-amazon-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/bochica3_6.jpeg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-walmart-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/bosque_san_carlos.jpeg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-netflix-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/cedromont.jpeg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-invision-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/cgh.jpg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-yahoo-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/cpn.png" alt=""/></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
-                        <div class="swiper-slide">
-                            <a href="#"><img src="/images/logo-invision-dark-blue.svg" alt=""/></a>
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/edif_villa_teresina.jpeg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/friproquim.png" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/granada.jpg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/gun_club.jpeg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/ikona.png" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/kids.png" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/la_esperanza.jpg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/nrc.png" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/quimicontrol.jpeg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/renovacion.png" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/sabana_felicidad.jpg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/terra_verde.jpeg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/tsg.jpg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/veramonte.jpeg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/vernazza.jpeg" alt=""/></a>
+                        </div>
+                        <!-- end client item -->
+                        <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                            <a href="#"><img src="/images/clientes/zona_franca.jpg" alt=""/></a>
                         </div>
                         <!-- end client item -->
                     </div>

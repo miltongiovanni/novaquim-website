@@ -50,12 +50,12 @@ include_once('../inc/config_db.php');
             <div class="row align-items-end justify-content-center mb-6 text-center text-lg-start sm-mb-8">
                 <div class="col-xl-5 col-lg-7 col-md-10 md-mb-25px"
                      data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">How can help you?</span>
-                    <h3 class="text-dark-gray fw-700 ls-minus-1px mb-0">Have a project in mind? Get in touch!</h3>
+                    <span class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Cómo podemos ayudarlo?</span>
+                    <h3 class="text-dark-gray fw-700 ls-minus-1px mb-0">¿Necesita productos para el aseo?</h3>
                 </div>
                 <div class="col-xl-6 offset-xl-1 col-lg-5 col-md-10 last-paragraph-no-margin">
-                    <p class="w-90 lg-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>We're
-                        here to help and answer any question you might have. We look forward to hearing from you. Any need help you please contact us or meet to office with coffee.</p>
+                    <p class="w-90 lg-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>Tenemos la solución
+                    perfecta a sus necesidades con productos de alta eficacia que permiten un ahorro de costos.  Déjenos sus datos, un asesor lo contactará pronto.</p>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 mb-6 sm-mb-8"
